@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-prettier/recommended",
+    "stylelint-config-prettier",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": ["stylelint-prettier", "stylelint-scss"],
+  "ignoreFiles": ["**/node_modules/**"],
+  "rules": {
+    "no-descending-specificity": null
+  }
+}
