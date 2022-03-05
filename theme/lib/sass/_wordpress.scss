@@ -108,14 +108,14 @@ div.aligncenter {
 
   blockquote {
     position: relative;
-    padding: 30px 20px 35px 55px;
+    padding: 20px 20px 20px 55px;
     margin: 0 0 28px;
     clear: both;
     border: 1px #eee solid;
 
     &::before {
       position: absolute;
-      top: 20px;
+      top: 7px;
       left: 12px;
       font-family: FontAwesome;
       font-size: 32px;
