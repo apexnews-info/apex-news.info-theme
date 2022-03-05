@@ -4,7 +4,9 @@ services:
   db:
     image: mysql:5.7
     volumes:
-      - db_data:/var/lib/mysql
+      - ./docker-volumes/db:/var/lib/mysql
+    ports:
+      - '3306:3306'
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: somewordpress
@@ -17,7 +19,8 @@ services:
       - db
     image: wordpress:latest
     volumes:
-      - ./wordpress:/var/www/html
+      - ./docker-volumes/wordpress:/var/www/html
+      - ./theme/:/var/www/html/wp-content/themes/apex-news.info-theme
     ports:
       - '8000:80'
     restart: always
@@ -25,5 +28,3 @@ services:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
-volumes:
-  db_data:
