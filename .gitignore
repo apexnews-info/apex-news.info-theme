@@ -1,2 +1,3 @@
 /docker-volumes
 /.ssh
+/node_modules
