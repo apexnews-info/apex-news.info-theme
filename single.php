@@ -99,8 +99,6 @@
                 </aside>
               </div>
 
-              <?php bzb_show_avatar(); ?>
-
               <?php comments_template('', true); ?>
 
             </article>
