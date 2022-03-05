@@ -1,4 +1,4 @@
-/*   
+/*
 Theme Name: XeoryBase
 Theme URI: http://xeory.jp/
 Description: Xeoryベーステーマ
@@ -7,16 +7,15 @@ Author URI: http://bazubu.com/
 Version: 0.1.4
 */
 
-@import "compass";
-
+@import 'compass';
 
 // base用の記述
 // ディスプレイ
-@import "display";
+@import 'display';
 // コモンCSS
-@import "common";
+@import 'common';
 
 // sp
-@import "sp";
+@import 'sp';
 // カラー
-@import "color";
+@import 'color';

@@ -4,7 +4,8 @@
 /* CTAのカスタム投稿タイプ
 * ---------------------------------------- */
 add_action('init', 'bzb_cta_custom_post_type');
-function bzb_cta_custom_post_type() {
+function bzb_cta_custom_post_type()
+{
   $labels = array(
     'name'                => 'CTA',
     'singular_name'       => 'CTA',
@@ -19,7 +20,7 @@ function bzb_cta_custom_post_type() {
   $args = array(
     'labels'              => $labels,
     'public'              => true,
-    'show_ui'             => true, 
+    'show_ui'             => true,
     'query_var'           => true,
     'hierarchical'        => false,
     'menu_position'       => 5,
@@ -29,18 +30,18 @@ function bzb_cta_custom_post_type() {
       'editor',
       'thumbnail',
       'page-attributes'
-      )
-  ); 
+    )
+  );
   register_post_type('cta', $args);
-  flush_rewrite_rules( false );  /* これです。 */
-
+  flush_rewrite_rules(false);  /* これです。 */
 }
 
 
 /* LPのカスタム投稿タイプ
 * ---------------------------------------- */
 add_action('init', 'bzb_lp_custom_post_type');
-function bzb_lp_custom_post_type() {
+function bzb_lp_custom_post_type()
+{
   $labels = array(
     'name'                => 'LP',
     'singular_name'       => 'LP',
@@ -66,9 +67,8 @@ function bzb_lp_custom_post_type() {
       'editor',
       'thumbnail',
       'page-attributes'
-      )
-  ); 
+    )
+  );
   register_post_type('lp', $args);
-  flush_rewrite_rules( false );  /* これです。 */
-
+  flush_rewrite_rules(false);  /* これです。 */
 }

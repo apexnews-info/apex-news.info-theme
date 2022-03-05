@@ -3,11 +3,12 @@
 
 /* JSON-LD
 * ---------------------------------------- */
-add_action('wp_head','bzb_json_ld');
-function bzb_json_ld (){
-  if ( is_page() || is_single() || !is_singular('lp') ) {
-    if ( have_posts() ){
-      while ( have_posts() ){
+add_action('wp_head', 'bzb_json_ld');
+function bzb_json_ld()
+{
+  if (is_page() || is_single() || !is_singular('lp')) {
+    if (have_posts()) {
+      while (have_posts()) {
         the_post();
         $context = 'http://schema.org';
         $type = 'Article';
@@ -24,7 +25,7 @@ function bzb_json_ld (){
         $url = get_permalink();
         $publisherType = 'Organization';
         $publisherName = get_bloginfo('name');
-        $json= "'@context' : '{$context}',
+        $json = "'@context' : '{$context}',
         '@type' : '{$type}',
         'name' : '{$name}',
         'author' : {
@@ -40,7 +41,7 @@ function bzb_json_ld (){
           '@type' : '{$publisherType}',
           'name' : '{$publisherName}'
         }";
-        echo '<script type="application/ld+json">{'.$json.'}</script>';
+        echo '<script type="application/ld+json">{' . $json . '}</script>';
       }
     }
     rewind_posts();

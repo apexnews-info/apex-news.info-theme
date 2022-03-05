@@ -1,4 +1,4 @@
-/*   
+/*
 Theme Name: XeoryBase
 Theme URI: http://xeory.jp/
 Description: Xeoryベーステーマ
@@ -7,12 +7,12 @@ Author URI: http://bazubu.com/
 */
 
 // compass
-@import "compass";
-@import "compass/reset";
+@import 'compass';
+@import 'compass/reset';
 
 // お約束
 // ノーマライズCSS
-@import "normalize";
-@import "wordpress";
+@import 'normalize';
+@import 'wordpress';
 // grid
-@import "grid";
+@import 'grid';

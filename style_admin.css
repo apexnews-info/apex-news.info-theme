@@ -8,7 +8,7 @@
 }
 
 textarea,
-input[type=text] {
+input[type='text'] {
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -111,7 +111,7 @@ small {
   margin-bottom: 12px;
 }
 #dashboard-widgets-wrap table tr {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 #dashboard-widgets-wrap table tr:nth-child(odd) {
   background-color: #fff;
@@ -170,25 +170,20 @@ small {
 /* ----------------------------------------
 * 男女比率
 ---------------------------------------- */
-#dashboard-widgets-wrap
-#disp_gender_table {
+#dashboard-widgets-wrap #disp_gender_table {
   margin-bottom: -3px;
 }
-#dashboard-widgets-wrap
-#disp_gender_table tr:nth-child(even) {
+#dashboard-widgets-wrap #disp_gender_table tr:nth-child(even) {
   background-color: #fff;
 }
-#dashboard-widgets-wrap
-#disp_gender_table th {
+#dashboard-widgets-wrap #disp_gender_table th {
   width: 30%;
 }
-#dashboard-widgets-wrap
-#disp_gender_table td {
+#dashboard-widgets-wrap #disp_gender_table td {
   text-align: center;
   width: 26%;
 }
-#dashboard-widgets-wrap
-#disp_gender_table td :first-child {
+#dashboard-widgets-wrap #disp_gender_table td :first-child {
   background-color: #fff;
 }
 
@@ -203,54 +198,42 @@ small {
 /* ----------------------------------------
 * 年代別
 ---------------------------------------- */
-#disp_age
-.disp_age_table {
+#disp_age .disp_age_table {
   margin-bottom: -3px;
 }
-#disp_age
-.disp_age_table tr:nth-child(even) {
+#disp_age .disp_age_table tr:nth-child(even) {
   background-color: #fff;
 }
-#disp_age
-.disp_age_table th {
+#disp_age .disp_age_table th {
   width: 30%;
 }
-#disp_age
-.disp_age_table td {
+#disp_age .disp_age_table td {
   text-align: center;
   width: 30%;
 }
-#disp_age
-.disp_age_table td :first-child {
+#disp_age .disp_age_table td :first-child {
   background-color: #fff;
 }
 
-#disp_age
-.inside div:nth-of-type(2) th {
+#disp_age .inside div:nth-of-type(2) th {
   background-color: #3c9 !important;
 }
-#disp_age
-.inside div:nth-of-type(3) th {
+#disp_age .inside div:nth-of-type(3) th {
   background-color: #399 !important;
 }
-#disp_age
-.inside div:nth-of-type(4) th {
+#disp_age .inside div:nth-of-type(4) th {
   background-color: #39c !important;
 }
-#disp_age
-.inside div:nth-of-type(5) th {
+#disp_age .inside div:nth-of-type(5) th {
   background-color: #369 !important;
 }
-#disp_age
-.inside div:nth-of-type(6) th {
+#disp_age .inside div:nth-of-type(6) th {
   background-color: #036 !important;
 }
-#disp_age
-.inside div:nth-of-type(7) th {
+#disp_age .inside div:nth-of-type(7) th {
   background-color: #333 !important;
 }
-#disp_age
-.inside div:nth-child(even) tr {
+#disp_age .inside div:nth-child(even) tr {
   background-color: #f9f9f9;
 }
 
@@ -264,46 +247,36 @@ small {
 /* ----------------------------------------
 * PC / モバイルの使用率
 ---------------------------------------- */
-#disp_device
-.disp_device_table {
+#disp_device .disp_device_table {
   margin-bottom: -3px;
 }
-#disp_device
-.disp_device_table th {
+#disp_device .disp_device_table th {
   width: 30%;
 }
-#disp_device
-.disp_device_table th:nth-of-type(1) {
+#disp_device .disp_device_table th:nth-of-type(1) {
   background-color: #39c;
 }
-#disp_device
-.disp_device_table th:nth-of-type(2) {
+#disp_device .disp_device_table th:nth-of-type(2) {
   background-color: #069;
 }
-#disp_device
-.disp_device_table th:nth-of-type(3) {
+#disp_device .disp_device_table th:nth-of-type(3) {
   background-color: #3c9;
 }
-#disp_device
-.disp_device_table td {
+#disp_device .disp_device_table td {
   text-align: center;
   width: 26%;
 }
 
-#disp_device
-.inside div:nth-of-type(2) th {
+#disp_device .inside div:nth-of-type(2) th {
   background-color: #39c !important;
 }
-#disp_device
-.inside div:nth-of-type(3) th {
+#disp_device .inside div:nth-of-type(3) th {
   background-color: #069 !important;
 }
-#disp_device
-.inside div:nth-of-type(4) th {
+#disp_device .inside div:nth-of-type(4) th {
   background-color: #3c9 !important;
 }
-#disp_device
-.inside div:nth-child(even) tr {
+#disp_device .inside div:nth-child(even) tr {
   background-color: #f9f9f9;
 }
 
@@ -311,7 +284,7 @@ small {
 * category
 ---------------------------------------- */
 body.taxonomy-category .quicktags-toolbar input,
-body.taxonomy-category .form-field input[type=checkbox] {
+body.taxonomy-category .form-field input[type='checkbox'] {
   width: auto;
 }
 
@@ -326,7 +299,7 @@ body.taxonomy-category .form-field input[type=checkbox] {
   font-size: 13px;
   border: 1px solid #efefef;
   padding: 20px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 #bzb_mail_form .inside .lp-form dt {
   margin-bottom: 0 0 8px;
@@ -354,21 +327,20 @@ body.toplevel_page_initial_setting_menu h3.hndle {
   margin-bottom: 20px;
 }
 
-
 .postbox .handlediv .toggle-indicator:before {
-    margin-top: 4px;
-    width: 20px;
-    border-radius: 50%;
-    text-indent: -1px;
-    content: "\f142";
-    display: inline-block;
-    font: 400 20px/1 dashicons;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-decoration: none!important;
+  margin-top: 4px;
+  width: 20px;
+  border-radius: 50%;
+  text-indent: -1px;
+  content: '\f142';
+  display: inline-block;
+  font: 400 20px/1 dashicons;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
 }
 
- .postbox.closed .toggle-indicator:before {
-    content: "\f140";
+.postbox.closed .toggle-indicator:before {
+  content: '\f140';
 }
