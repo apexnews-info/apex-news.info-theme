@@ -104,22 +104,6 @@ $phone-x-padding: 20px;
     height: auto;
   }
 
-  /* header */
-  #header {
-    padding: 36px 0 32px !important;
-    .wrap {
-      padding: 0;
-    }
-    #logo {
-      img {
-        vertical-align: top;
-      }
-    }
-    #header-primary-nav {
-      display: none;
-    }
-  }
-
   #header-menu-tog {
     display: block;
     float: right;

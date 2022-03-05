@@ -43,6 +43,8 @@ $border-color-light: #efefef;
 $gray: #5e6265;
 $gray-light: #cccccc;
 
+$apex-color: #953036;
+
 // link ----------------------------------
 
 $link-color: $main_color;
@@ -59,7 +61,7 @@ $feedly-color: #2bb24c;
 // header --------------------------------
 
 $header-text-logo: $text_color;
-$header-bg: #fff;
+$header-bg: $apex-color;
 
 $header-sns-link: #ccc;
 $header-sns-hover: #57585a;
