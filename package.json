@@ -1,0 +1,19 @@
+{
+  "name": "apex-news.info-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker-compose up -d && npx sass --watch --style compressed ./theme/lib/sass/:./theme/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apexnews-info/apex-news.info-theme.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apexnews-info/apex-news.info-theme/issues"
+  },
+  "homepage": "https://github.com/apexnews-info/apex-news.info-theme#readme"
+}

@@ -1,18 +1,15 @@
-/*
-Theme Name: XeoryBase
-Theme URI: http://xeory.jp/
-Description: Xeoryベーステーマ
-Author: バズ部
-Author URI: http://bazubu.com/
+/*!
+Theme Name: apex-news.info-theme
+Theme URI: https://apex-news.info/
+Description: apex-news.info専用テーマ
+Author: apex-news.info
+Author URI: https://github.com/apexnews-info/apex-news.info-theme
+Version: 0.1
 */
 
-// compass
-@import 'compass';
-@import 'compass/reset';
-
-// お約束
-// ノーマライズCSS
+// ノーマライズ
 @import 'normalize';
 @import 'wordpress';
+
 // grid
 @import 'grid';

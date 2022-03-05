@@ -31,33 +31,11 @@
 
     <?php } else { ?>
 
-      <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-        <div class="wrap">
-          <?php
-          $logo_image = get_option('logo_image');
-          $logo_text = get_option('logo_text');
-          if (!empty($logo_image) && get_option('toppage_logo_type') == 'logo_image') :
-            $logo_inner = '<img src="' . get_option('logo_image') . '" alt="' . get_bloginfo('name') . '" />';
-          else :
-            if (!empty($logo_text) && get_option('toppage_logo_type') == 'logo_text') :
-              $logo_inner = get_option('logo_text');
-            else :
-              $logo_inner = get_bloginfo('name');
-            endif;
-          endif;
-          $logo_wrap = (is_front_page() || is_home()) ? 'h1' : 'p';
-          ?>
-          <<?php echo $logo_wrap; ?> id="logo" itemprop="headline">
-            <a href="<?php echo home_url(); ?>"><?php echo $logo_inner; ?></a>
-          </<?php echo $logo_wrap; ?>>
-
-          <?php bzb_header_social_buttons(); ?>
-
-          <?php if (has_nav_menu('global_nav')) { ?>
-            <div id="header-menu-tog"> <a href="#"><i class="fa fa-align-justify"></i></a></div>
-          <?php } ?>
-        </div>
-      </header>
+      <a href="/">
+        <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+          <img id="site-header" src="<?php echo get_template_directory_uri() . "/lib/images/site-header.png"; ?>" />
+        </header>
+      </a>
 
       <!-- start global nav  -->
       <!---->
