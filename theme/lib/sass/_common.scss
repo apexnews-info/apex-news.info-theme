@@ -886,6 +886,21 @@ div.post-share-fb .fb_iframe_widget span {
       display: none;
     }
 
+    .wpd-form {
+      .wpd-textarea-wrap {
+        textarea {
+          width: 100%;
+          min-height: 6em !important;
+          border: 1px solid $border-color;
+          border-radius: 6px;
+
+          &::placeholder {
+            color: #aaa;
+          }
+        }
+      }
+    }
+
     .wpd-thread-head {
       .wpd-thread-info {
         border-bottom: 2px solid $apex-color;
@@ -904,7 +919,7 @@ div.post-share-fb .fb_iframe_widget span {
       padding: 4px 12px 8px;
       margin: 10px;
       border: 1px solid $border-color;
-      border-radius: 8px;
+      border-radius: 6px;
 
       .wpd-comment-header {
         .wpd-comment-author {
