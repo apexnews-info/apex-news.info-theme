@@ -3,29 +3,29 @@
 <div id="content">
 
 
-<div class="wrap clearfix">
+  <div class="wrap clearfix">
 
-  <?php bzb_breadcrumb(); ?>
-  
-  <div id="main"<?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage">
+    <?php bzb_breadcrumb(); ?>
 
-    <div class="main-inner">
+    <div id="main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage">
 
-    <article id="post-404" class="cotent-none post" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-    <header class="post-header">
-      <h1 class="post-title">あなたがアクセスしようとしたページは削除されたかURLが変更されています。</h1>
-      </header>
-      <section class="post-content" itemprop="text">
-        <?php get_template_part('content', 'none'); ?>
-      </section>
-    </article>
+      <div class="main-inner">
 
-    </div><!-- /main-inner -->
-  </div><!-- /main -->
+        <article id="post-404" class="cotent-none post" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+          <header class="post-header">
+            <h1 class="post-title">あなたがアクセスしようとしたページは削除されたかURLが変更されています。</h1>
+          </header>
+          <section class="post-content" itemprop="text">
+            <?php get_template_part('content', 'none'); ?>
+          </section>
+        </article>
 
-<?php get_sidebar(); ?>
+      </div><!-- /main-inner -->
+    </div><!-- /main -->
 
-</div><!-- /wrap -->
+    <?php get_sidebar(); ?>
+
+  </div><!-- /wrap -->
 
 </div><!-- /content -->
 

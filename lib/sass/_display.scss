@@ -3,153 +3,152 @@
 /* all display
 -------------------------------------------------- */
 
-.wrap{
+.wrap {
   width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
-  *zoom:1;
-  &:before{
+  *zoom: 1;
+  &:before {
     display: inline-table;
   }
-  &:after{
-    content: "";
+  &:after {
+    content: '';
     display: block;
-    clear:both;
+    clear: both;
   }
 }
-#main{
+#main {
   width: 100%;
   float: left;
 }
-.main-inner{
+.main-inner {
   margin-right: $side-width + $pc-gt;
 }
-#side{
+#side {
   width: $side-width;
   float: left;
   margin-left: -$side-width;
 }
 
-.left-content{
-  #main{
+.left-content {
+  #main {
     width: 100%;
     float: left;
   }
-  .main-inner{
+  .main-inner {
     margin-right: $side-width + $pc-gt;
-    margin-left:0;
+    margin-left: 0;
   }
-  #side{
+  #side {
     width: $side-width;
     float: left;
     margin-left: -$side-width;
   }
 }
-.right-content{
-  #main{
+.right-content {
+  #main {
     width: 100%;
     float: left;
   }
-  .main-inner{
+  .main-inner {
     margin-left: $side-width + $pc-gt;
     margin-right: 0;
   }
-  #side{
+  #side {
     width: $side-width;
     float: left;
     margin-left: -100%;
   }
 }
-.one-column{
-  #content{
-    .wrap{
+.one-column {
+  #content {
+    .wrap {
       width: 1000px;
-      #main{
+      #main {
         width: 100%;
         float: none;
-        .main-inner{
+        .main-inner {
           width: 100%;
           margin: 0;
         }
       }
-      #side{
+      #side {
         display: none;
       }
     }
   }
 }
 
-
 /* ----------------------------------------
 * レスポンシブ
-* ~ / 1200px / 991px / 767px 
+* ~ / 1200px / 991px / 767px
 * desctop / laptop / tablet / phone
 ---------------------------------------- */
 
 @media screen and (max-width: 1200px) {
-/* laptop */
-.wrap,
-.one-column #content .wrap{
-  margin-left: $lp-gt;
-  margin-right: $lp-gt;
-  width: auto;
-}
-.main-inner{
-  margin-right: $side-width + $lp-gt;
-  box-sizing: border-box;
-}
+  /* laptop */
+  .wrap,
+  .one-column #content .wrap {
+    margin-left: $lp-gt;
+    margin-right: $lp-gt;
+    width: auto;
+  }
+  .main-inner {
+    margin-right: $side-width + $lp-gt;
+    box-sizing: border-box;
+  }
 
-/* laptop end */
+  /* laptop end */
 }
 
 @media screen and (max-width: 991px) {
-/* tablet */
+  /* tablet */
 
-.wrap,
-.one-column #content .wrap{
-  margin-left: $tb-gt;
-  margin-right: $tb-gt;
-}
-
-#main,
-.main-inner,
-#side{
-  float: none;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.left-content,
-.right-content{
-  #main{
-    float: none;
+  .wrap,
+  .one-column #content .wrap {
+    margin-left: $tb-gt;
+    margin-right: $tb-gt;
   }
-  .main-inner{
+
+  #main,
+  .main-inner,
+  #side {
+    float: none;
+    width: 100%;
+    margin-left: 0;
     margin-right: 0;
-    margin-left:0;
-    width: 100%;
   }
-  #side{
-    width: 100%;
-    float: none;
-    margin: 0;
-  }
-}
-#side{
-  padding-top: 42px;
-}
 
-/* tablet end */
+  .left-content,
+  .right-content {
+    #main {
+      float: none;
+    }
+    .main-inner {
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+    #side {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
+  }
+  #side {
+    padding-top: 42px;
+  }
+
+  /* tablet end */
 }
 @media screen and (max-width: 767px) {
-/* phone */
+  /* phone */
 
-.wrap,
-.one-column #content .wrap{
-  margin-left: $sp-gt;
-  margin-right: $sp-gt;
-}
+  .wrap,
+  .one-column #content .wrap {
+    margin-left: $sp-gt;
+    margin-right: $sp-gt;
+  }
 
-/* phone end */
+  /* phone end */
 }

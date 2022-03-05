@@ -2,80 +2,80 @@
 
 <div id="content">
 
-<div class="wrap">
+  <div class="wrap">
     <?php bzb_breadcrumb(); ?>
 
-  <div id="main" <?php bzb_layout_main(); ?>>
+    <div id="main" <?php bzb_layout_main(); ?>>
 
-    <div class="main-inner">
+      <div class="main-inner">
 
-    <section class="cat-content">
-      <header class="cat-header">
-        <h1 class="post-title"><?php bzb_title(); ?></h1>
-      </header>
-      <?php if( is_category() ) { ?>
-        <?php bzb_category_description(); ?>
-      <?php } ?>
+        <section class="cat-content">
+          <header class="cat-header">
+            <h1 class="post-title"><?php bzb_title(); ?></h1>
+          </header>
+          <?php if (is_category()) { ?>
+            <?php bzb_category_description(); ?>
+          <?php } ?>
 
-    </section>
+        </section>
 
-    <div class="post-loop-wrap">
-    <?php
+        <div class="post-loop-wrap">
+          <?php
 
-      if ( have_posts() ) :
+          if (have_posts()) :
 
-        while ( have_posts() ) : the_post();
+            while (have_posts()) : the_post();
 
-    ?>
+          ?>
 
-<article id="post-<?php echo the_ID(); ?>" <?php post_class(); ?> >
+              <article id="post-<?php echo the_ID(); ?>" <?php post_class(); ?>>
 
-      <header class="post-header">
-        <ul class="post-meta list-inline">
-          <li class="date updated"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d');?></li>
-        </ul>
-        <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      </header>
+                <header class="post-header">
+                  <ul class="post-meta list-inline">
+                    <li class="date updated"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d'); ?></li>
+                  </ul>
+                  <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                </header>
 
-      <section class="post-content">
+                <section class="post-content">
 
-        <?php if( get_the_post_thumbnail() ) { ?>
-        <div class="post-thumbnail">
-          <a href="<?php the_permalink(); ?>" rel="nofollow"><?php the_post_thumbnail(); ?></a>
-        </div>
-        <?php } ?>
+                  <?php if (get_the_post_thumbnail()) { ?>
+                    <div class="post-thumbnail">
+                      <a href="<?php the_permalink(); ?>" rel="nofollow"><?php the_post_thumbnail(); ?></a>
+                    </div>
+                  <?php } ?>
 
-        <?php the_content('続きを読む'); ?>
+                  <?php the_content('続きを読む'); ?>
 
-      </section>
+                </section>
 
-    </article>
-    <?php
+              </article>
+            <?php
 
-        endwhile;
+            endwhile;
 
-      else :
-    ?>
+          else :
+            ?>
 
-    <article id="post-404"class="cotent-none post">
-      <section class="post-content">
-        <?php echo get_template_part('content', 'none'); ?>
-      </section>
-    </article>
+            <article id="post-404" class="cotent-none post">
+              <section class="post-content">
+                <?php echo get_template_part('content', 'none'); ?>
+              </section>
+            </article>
 
-    <?php
-      endif;
-    ?>
-    <?php if (function_exists("pagination")) {
-      pagination($wp_query->max_num_pages);
-    } ?>
-    </div><!-- /post-loop-wrap -->
-    </div><!-- /main-inner -->
-  </div><!-- /main -->
+          <?php
+          endif;
+          ?>
+          <?php if (function_exists("pagination")) {
+            pagination($wp_query->max_num_pages);
+          } ?>
+        </div><!-- /post-loop-wrap -->
+      </div><!-- /main-inner -->
+    </div><!-- /main -->
 
-<?php get_sidebar(); ?>
+    <?php get_sidebar(); ?>
 
-</div><!-- /wrap -->
+  </div><!-- /wrap -->
 
 </div><!-- /content -->
 

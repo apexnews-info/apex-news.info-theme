@@ -39,4 +39,3 @@ eof;
 
   echo $disp_avatar;
 }
-?>

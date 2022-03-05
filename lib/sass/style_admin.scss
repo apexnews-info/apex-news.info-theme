@@ -1,22 +1,21 @@
 /* 管理画面用のスタイルシート */
 
-
 /* ----------------------------------------
 * form
 ---------------------------------------- */
-#postdivrich #content{
+#postdivrich #content {
   resize: both;
 }
 textarea,
-input[type=text]{
+input[type='text'] {
   max-width: 100%;
   box-sizing: border-box;
 }
-table{
+table {
   max-width: 100%;
   box-sizing: border-box;
 }
-.text-red{
+.text-red {
   color: #f00;
 }
 /* ----------------------------------------
@@ -24,8 +23,8 @@ table{
 ---------------------------------------- */
 
 /* start */
-.toplevel_page_bzb_option_start{
-  h3.hndle{
+.toplevel_page_bzb_option_start {
+  h3.hndle {
     font-size: 14px;
     padding: 8px 12px;
     margin: 0;
@@ -33,7 +32,7 @@ table{
   }
 }
 
-small{
+small {
   color: #666;
 }
 
@@ -41,11 +40,10 @@ small{
 * post
 ---------------------------------------- */
 
-
 /* title */
 .post-php,
-.post-new-php{
-  #poststuff #titlewrap{
+.post-new-php {
+  #poststuff #titlewrap {
     margin: 6px 0 0;
     padding: 0 12px 12px;
   }
@@ -54,31 +52,33 @@ small{
 /* レイアウト設定 */
 .cmb_id_bzb_post_layout,
 .cmb_id_post_layout,
-.layout-radio{
-  input[type='radio']{
-    filter: alpha(opacity=0); -moz-opacity:0; opacity:0;
+.layout-radio {
+  input[type='radio'] {
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
     position: absolute;
   }
-  #layout-1 label{
-    background: url(./lib/images/admin/layout_01.png) no-repeat left top;    
-    &.checked{
+  #layout-1 label {
+    background: url(./lib/images/admin/layout_01.png) no-repeat left top;
+    &.checked {
       background-position: left bottom;
     }
   }
-  #layout-2 label{
-    background: url(./lib/images/admin/layout_02.png) no-repeat left top;    
-    &.checked{
+  #layout-2 label {
+    background: url(./lib/images/admin/layout_02.png) no-repeat left top;
+    &.checked {
       background-position: left bottom;
     }
   }
-  #layout-3 label{
-    background: url(./lib/images/admin/layout_03.png) no-repeat left top;    
-    &.checked{
+  #layout-3 label {
+    background: url(./lib/images/admin/layout_03.png) no-repeat left top;
+    &.checked {
       background-position: left bottom;
     }
   }
   td label,
-  li label{
+  li label {
     width: 80px;
     height: 72px;
     text-indent: -9999px;
@@ -86,12 +86,11 @@ small{
   }
 }
 
-
 /*  */
-.cmb_id__bzb_post_check{
-  input{
+.cmb_id__bzb_post_check {
+  input {
   }
-  label{
+  label {
     font-size: 11px;
   }
 }
@@ -99,18 +98,16 @@ small{
 /* ----------------------------------------
 * 管理画面レポート
 ---------------------------------------- */
-#dashboard-widgets-wrap  {
-
+#dashboard-widgets-wrap {
   table {
-
     width: 100%;
-    margin-bottom: 12px; 
+    margin-bottom: 12px;
 
     tr {
-      background-color: #F9F9F9;
+      background-color: #f9f9f9;
     }
     tr:nth-child(odd) {
-        background-color: #fff;
+      background-color: #fff;
     }
     th {
       background-color: #888888;
@@ -157,9 +154,8 @@ small{
 /* ----------------------------------------
 * 3ヶ月推移
 ---------------------------------------- */
-#disp_3term_hikaku{
+#disp_3term_hikaku {
   tr {
-
   }
   th {
     vertical-align: middle;
@@ -174,15 +170,13 @@ small{
 /* ----------------------------------------
 * 男女比率
 ---------------------------------------- */
-#dashboard-widgets-wrap
-#disp_gender_table{
+#dashboard-widgets-wrap #disp_gender_table {
   margin-bottom: -3px;
 
   tr {
-
   }
   tr:nth-child(even) {
-      background-color: #fff;
+    background-color: #fff;
   }
   th {
     width: 30%;
@@ -204,11 +198,9 @@ small{
 /* ----------------------------------------
 * 年代別
 ---------------------------------------- */
-#disp_age
-.disp_age_table{
+#disp_age .disp_age_table {
   margin-bottom: -3px;
   tr {
-
   }
   tr:nth-child(even) {
     background-color: #fff;
@@ -224,16 +216,29 @@ small{
     }
   }
 }
-#disp_age 
-.inside {
-  div:nth-of-type(2) th{ background-color: #3c9 !important; }
-  div:nth-of-type(3) th{ background-color: #399 !important; }
-  div:nth-of-type(4) th{ background-color: #39c !important; }
-  div:nth-of-type(5) th{ background-color: #369 !important; }
-  div:nth-of-type(6) th{ background-color: #036 !important; }
-  div:nth-of-type(7) th{ background-color: #333 !important; }
+#disp_age .inside {
+  div:nth-of-type(2) th {
+    background-color: #3c9 !important;
+  }
+  div:nth-of-type(3) th {
+    background-color: #399 !important;
+  }
+  div:nth-of-type(4) th {
+    background-color: #39c !important;
+  }
+  div:nth-of-type(5) th {
+    background-color: #369 !important;
+  }
+  div:nth-of-type(6) th {
+    background-color: #036 !important;
+  }
+  div:nth-of-type(7) th {
+    background-color: #333 !important;
+  }
 
-  div:nth-child(even) tr { background-color: #f9f9f9;}
+  div:nth-child(even) tr {
+    background-color: #f9f9f9;
+  }
 }
 /*
 #disp_age #18-24 table tbody tr ,
@@ -245,41 +250,51 @@ small{
 /* ----------------------------------------
 * PC / モバイルの使用率
 ---------------------------------------- */
-#disp_device
-.disp_device_table{
+#disp_device .disp_device_table {
   margin-bottom: -3px;
   tr {
-
   }
   th {
     width: 30%;
   }
-  th:nth-of-type(1) { background-color: #39c; }
-  th:nth-of-type(2) { background-color: #069; }
-  th:nth-of-type(3) { background-color: #3c9; }
+  th:nth-of-type(1) {
+    background-color: #39c;
+  }
+  th:nth-of-type(2) {
+    background-color: #069;
+  }
+  th:nth-of-type(3) {
+    background-color: #3c9;
+  }
   td {
     text-align: center;
     width: 26%;
   }
 }
 
-#disp_device 
-.inside {
-  div:nth-of-type(2) th{ background-color: #39c !important; }
-  div:nth-of-type(3) th{ background-color: #069 !important; }
-  div:nth-of-type(4) th{ background-color: #3c9 !important; }
+#disp_device .inside {
+  div:nth-of-type(2) th {
+    background-color: #39c !important;
+  }
+  div:nth-of-type(3) th {
+    background-color: #069 !important;
+  }
+  div:nth-of-type(4) th {
+    background-color: #3c9 !important;
+  }
 
-  div:nth-child(even) tr { background-color: #f9f9f9;}
+  div:nth-child(even) tr {
+    background-color: #f9f9f9;
+  }
 }
-
 
 /* ----------------------------------------
 * category
 ---------------------------------------- */
 
-body.taxonomy-category{
+body.taxonomy-category {
   .quicktags-toolbar input,
-  .form-field input[type=checkbox]{
+  .form-field input[type='checkbox'] {
     width: auto;
   }
 }
@@ -296,7 +311,7 @@ body.taxonomy-category{
       font-size: 13px;
       border: 1px solid #efefef;
       padding: 20px;
-      background-color: #F9F9F9;
+      background-color: #f9f9f9;
     }
     .lp-form {
       dt {
@@ -312,20 +327,19 @@ body.taxonomy-category{
 /* ----------------------------------------
 * 初期設定
 ---------------------------------------- */
-body.toplevel_page_initial_setting_menu{
-  h4{
+body.toplevel_page_initial_setting_menu {
+  h4 {
     margin-top: 3em;
   }
-  h3.hndle{
+  h3.hndle {
     cursor: default !important;
   }
 }
 
-
 /* Ver 0.1.2 */
-.quicktags-toolbar{
+.quicktags-toolbar {
   box-sizing: content-box;
 }
-#postdivrich{
+#postdivrich {
   margin-bottom: 20px;
 }

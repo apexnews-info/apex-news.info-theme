@@ -1,22 +1,21 @@
-
 .aligncenter,
 div.aligncenter {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.alignright{
+.alignright {
   float: right;
   margin-left: 12px;
   margin-bottom: 12px;
 }
-.alignleft{
+.alignleft {
   float: left;
   margin-right: 12px;
   margin-bottom: 12px;
 }
-.aligncenter{
+.aligncenter {
   clear: both;
   margin-left: auto;
   margin-right: auto;
@@ -25,46 +24,50 @@ div.aligncenter {
 
 /* header */
 
-#logo{
+#logo {
   margin: 0;
 }
 
 /* post */
 
-
-.post-content{
-  h1,h2,h3,h4,h5,h6{
+.post-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: bold;
     line-height: 1.4;
   }
-  h1{
+  h1 {
     font-size: 36px;
     margin: 1em 0;
     clear: both;
   }
-  
-  h2{
+
+  h2 {
     font-size: 28px;
     margin: 2em 0 1em;
     clear: both;
   }
-  
-  h3{
+
+  h3 {
     font-size: 24px;
     margin: 2em 0 1em;
   }
-  
-  h4{
+
+  h4 {
     font-size: 18px;
     margin: 2em 0 1em;
   }
-  
-  h5{
+
+  h5 {
     font-size: 16px;
     margin: 2em 0 1em;
   }
-  
-  h6{
+
+  h6 {
     font-size: 14px;
     margin: 2em 0 1em;
   }
@@ -79,29 +82,28 @@ div.aligncenter {
   ul {
     margin: 0 0 2em;
   }
-  li{
+  li {
     margin: 6px 0;
   }
   dd {
     margin: 0 0 20px 0;
-    
   }
-  
+
   ol,
   ul {
     padding: 0 0 0 20px;
     ol,
-    ul{
+    ul {
       margin: 0;
     }
   }
-  blockquote{
+  blockquote {
     clear: both;
     margin: 0 0 28px;
     padding: 30px 20px 35px 55px;
     position: relative;
     border: 1px #eee solid;
-    &:before{
+    &:before {
       content: '';
       font-family: 'FontAwesome';
       font-size: 32px;
@@ -110,114 +112,111 @@ div.aligncenter {
       top: 20px;
       left: 12px;
     }
-    cite{
+    cite {
       position: absolute;
       right: 20px;
       bottom: 10px;
       font-size: 12px;
       color: #808080;
     }
-    *:last-child{
+    *:last-child {
       margin-bottom: 0;
     }
   }
-  table{
+  table {
     border: 1px #ddd solid;
     width: 100%;
     margin-bottom: 48px;
     th,
-    td{
+    td {
       padding: 8px 10px;
       border: #ddd solid 1px;
     }
-    th{
+    th {
       color: #fff;
     }
-    thead{
-      th{
+    thead {
+      th {
         background: #5e6265;
       }
     }
-    tbody{
-      th{
-        background: lighten(#5e6265, 20%); 
+    tbody {
+      th {
+        background: lighten(#5e6265, 20%);
       }
     }
-    &.table-line{
+    &.table-line {
       table,
       th,
-      td{
+      td {
         border-color: #fff;
       }
-      th{
+      th {
         background: transparent;
         color: #333;
         font-weight: bold;
       }
-      thead{
-        th{
+      thead {
+        th {
           background: #5e6265;
           color: #fff;
         }
       }
-      tr{
+      tr {
         background: #eee;
       }
-      tr:nth-child(2n+1) {
+      tr:nth-child(2n + 1) {
         background: #ddd;
       }
-
     }
   }
-  
 }
 
-.post-title{
+.post-title {
   margin: 0 0 36px;
   font-size: 28px;
   clear: both;
   font-weight: bold;
-  body.page &{
+  body.page & {
     margin-bottom: 0;
   }
 }
 .wp-caption {
-   border: 1px solid #ddd;
-   text-align: center;
-   background-color: #f3f3f3;
-   padding-top: 4px;
-   padding-left: 4px;
-   padding-right: 4px;
-   margin: 10px;
-   max-width: 100%;
-   box-sizing: border-box;
-   /* optional rounded corners for browsers that support it */
-   -moz-border-radius: 3px;
-   -khtml-border-radius: 3px;
-   -webkit-border-radius: 3px;
-   border-radius: 3px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  /* optional rounded corners for browsers that support it */
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .wp-caption img {
-   margin: 0;
-   padding: 0;
-   border: 0 none;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
 }
 
 .wp-caption p.wp-caption-text {
-   font-size: 11px;
-   line-height: 17px;
-   padding: 0 4px 5px;
-   margin: 0;
+  font-size: 11px;
+  line-height: 17px;
+  padding: 0 4px 5px;
+  margin: 0;
 }
-
 
 /* ----------------------------------------
 * content-none
 ---------------------------------------- */
 
-.content-none{
-  #searchform{
+.content-none {
+  #searchform {
     max-width: 400px;
   }
 }
@@ -226,14 +225,14 @@ div.aligncenter {
 * pagetop
 ---------------------------------------- */
 
-.pagetop{
+.pagetop {
   visibility: hidden;
   opacity: 0;
   position: fixed;
   bottom: 50px;
   right: 50px;
   color: #fff;
-  span{
+  span {
     display: block;
     border-radius: 25px;
     background: #2b2b2b;
@@ -243,48 +242,48 @@ div.aligncenter {
     line-height: 40px;
     font-size: 36px;
     //opacity: .8;
-    i{
+    i {
       color: #fff;
     }
   }
-  &.show{
-  visibility: visible;
-  opacity: .8;
+  &.show {
+    visibility: visible;
+    opacity: 0.8;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
-/* phone */
+  /* phone */
 
+  h1 {
+    font-size: 24px;
+    margin: 36px 0;
+    clear: both;
+  }
 
-h1{
-  font-size: 24px;
-  margin: 36px 0;
-  clear: both;
-}
+  h2 {
+    font-size: 22px;
+    margin: 2em 0 1em;
+    clear: both;
+  }
 
-h2{
-  font-size: 22px;
-  margin: 2em 0 1em;
-  clear: both;
-}
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 18px;
+    margin: 2em 0 1em;
+  }
 
-h3,h4,h5,h6{
-  font-size: 18px;
-  margin: 2em 0 1em;
-}
-
-/* phone end */
+  /* phone end */
 }
 
 @media screen and (max-width: 991px) {
-/* tablet */
-.pagetop{
-  right: 20px;
-  bottom: 20px;
-}
+  /* tablet */
+  .pagetop {
+    right: 20px;
+    bottom: 20px;
+  }
 
-/* tablet end */
+  /* tablet end */
 }

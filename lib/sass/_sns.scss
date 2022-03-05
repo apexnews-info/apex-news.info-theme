@@ -1,43 +1,40 @@
-@import "_color";
+@import '_color';
 
 // sns ----------
 
 $twitter-color: #00aced;
-$facebook-color: #305097 ;
+$facebook-color: #305097;
 $google-color: #db4a39;
 $hatena-color: #7db4e8;
 
-
-.bzb-sns{}
-.bzb-sns-btn{
+.bzb-sns {
+}
+.bzb-sns-btn {
   //overflow: hidden;
   //overflow: hidden;
-  li{
+  li {
     display: inline-block;
     vertical-align: top;
     margin-right: 8px;
-    &.bzb-facebook .fb_iframe_widget span{
+    &.bzb-facebook .fb_iframe_widget span {
       vertical-align: top !important;
     }
-    &.bzb-twitter{
+    &.bzb-twitter {
       width: 96px;
-    } 
+    }
   }
 }
 
-.fb-like iframe,.item-facebook-like iframe {
-max-width: none !important;/*こちらを優先*/
+.fb-like iframe,
+.item-facebook-like iframe {
+  max-width: none !important; /*こちらを優先*/
 }
 
 /* loop sns */
 
-
-.post-loop-wrap{
-
-  .bzb-sns-btn{
+.post-loop-wrap {
+  .bzb-sns-btn {
     height: 30px;
     padding: 0 56px;
   }
-
-
 }

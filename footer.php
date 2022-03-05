@@ -1,7 +1,7 @@
 <footer id="footer">
-<?php if( has_nav_menu( 'footer_nav' ) ){ ?>
-  <div class="footer-01">
-    <div class="wrap">
+  <?php if (has_nav_menu('footer_nav')) { ?>
+    <div class="footer-01">
+      <div class="wrap">
         <?php
         wp_nav_menu(
           array(
@@ -11,10 +11,11 @@
             'container'       => 'nav',
             'items_wrap'      => '<ul id="footer-nav" class="%2$s">%3$s</ul>'
           )
-        );?>
-    </div><!-- /wrap -->
-  </div><!-- /footer-01 -->
-<?php } //if footer_nav ?>
+        ); ?>
+      </div><!-- /wrap -->
+    </div><!-- /footer-01 -->
+  <?php } //if footer_nav 
+  ?>
   <div class="footer-02">
     <div class="wrap">
       <p class="footer-copy">
@@ -29,29 +30,29 @@
 <a href="#" class="pagetop"><span><i class="fa fa-angle-up"></i></span></a>
 <?php wp_footer(); ?>
 <script>
-(function($){
+  (function($) {
 
-$(function(){
-  <?php if( !wp_is_mobile() ){?>
-  $(".sub-menu").css('display', 'none');
-  $("#gnav-ul li").hover(function(){
-    $(this).children('ul').fadeIn('fast');
-  }, function(){
-    $(this).children('ul').fadeOut('fast');
-  });
-  <?php }?>
-  // スマホトグルメニュー
+    $(function() {
+      <?php if (!wp_is_mobile()) { ?>
+        $(".sub-menu").css('display', 'none');
+        $("#gnav-ul li").hover(function() {
+          $(this).children('ul').fadeIn('fast');
+        }, function() {
+          $(this).children('ul').fadeOut('fast');
+        });
+      <?php } ?>
+      // スマホトグルメニュー
 
-  $('#gnav').removeClass('active');
+      $('#gnav').removeClass('active');
 
-  $('#header-menu-tog a').click(function(){
-    $('#gnav').toggleClass('active');
-  });
-});
+      $('#header-menu-tog a').click(function() {
+        $('#gnav').toggleClass('active');
+      });
+    });
 
 
-})(jQuery);
-
+  })(jQuery);
 </script>
 </body>
+
 </html>
