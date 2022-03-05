@@ -54,14 +54,12 @@ if (post_password_required()) {
 
   <?php
   $com_args = array(
-    'comment_notes_before' => '',/* ここで「メールアドレスが公開されることはありません」を削除 */
+    'comment_notes_before' => '',
     'fields' => array(
-      'author' => '<p class="comment-form-author">' . '<label for="author">' . __('Name') . '</label> ' . ($req ? '<span class="required">*</span>' : '') .
-        '<br /><input id="author" name="author" type="text" value="' . esc_attr($commenter['comment_author']) . '" size="30" /></p>',/* ここは投稿者名のフォーム */
-      'email'  => '<p class="comment-form-email"><label for="email">' . __('メールアドレス（公開はされません。）') . '</label> ' . ($req ? '<span class="required">*</span>' : '') .
-        '<br /><input id="email" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) . '" size="30" /></p>',/* ここはメールアドレスのフォーム。文言を変えてます。 */
+      'author' => '',
+      'email'  => '',
       'url'    => '',
-    ),/* ここはURLのフォーム。削除している。 */
+    ),
   );
   comment_form($com_args); ?>
 
