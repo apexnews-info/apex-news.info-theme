@@ -79,26 +79,6 @@
 
               <?php echo bzb_get_cta($post->ID); ?>
 
-              <div class="post-share">
-
-                <h4 class="post-share-title">SNSでもご購読できます。</h4>
-                <?php if (is_active_sidebar('under_post_area')) {
-                  dynamic_sidebar('under_post_area');
-                } ?>
-
-                <?php
-                $twitter_from_db = "https://twitter.com/" . esc_html(get_option('twitter_id'));
-                $feedly_url = "https://feedly.com/i/subscription/feed/" . urlencode(get_bloginfo('rss2_url'));
-                ?>
-
-                <aside class="post-sns">
-                  <ul>
-                    <li class="post-sns-twitter"><a href="<?php echo $twitter_from_db; ?>"><span>Twitter</span>でフォローする</a></li>
-                    <li class="post-sns-feedly"><a href="<?php echo $feedly_url; ?>"><span>Feedly</span>でフォローする</a></li>
-                  </ul>
-                </aside>
-              </div>
-
               <?php comments_template('', true); ?>
 
             </article>
