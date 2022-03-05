@@ -1,10 +1,8 @@
-//
 // Font Awesome hatena bookmark
-//
 .fa-hatena {
-  &:before {
-    content: 'B!';
+  &::before {
     font-family: Verdana;
     font-weight: bold;
+    content: "B!";
   }
 }

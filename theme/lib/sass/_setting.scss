@@ -23,26 +23,22 @@ $side-width: 290px;
 
 // font ========================================
 
-$font-awesome: FontAwesome;
-$font-sans: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', '游ゴシック',
-  YuGothic, Verdana, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic',
+$font-awesome: fontawesome;
+$font-sans: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+  yugothic, verdana, "メイリオ", meiryo, osaka, "ＭＳ Ｐゴシック", "MS PGothic",
   sans-serif;
 
 // color ========================================
 
-// common
-//----------------------------------------
+// common --------------------------------
 $main-color: #2581c4;
 $key-color: #f24e4f;
 $base-color: #f9f9f9;
 $text-color: #383838;
-
 $border-color: #e5e5e5;
 $border-color-light: #efefef;
-
 $gray: #5e6265;
-$gray-light: #cccccc;
-
+$gray-light: #ccc;
 $apex-color: #953036;
 
 // link ----------------------------------
@@ -62,7 +58,6 @@ $feedly-color: #2bb24c;
 
 $header-text-logo: $text_color;
 $header-bg: $apex-color;
-
 $header-sns-link: #ccc;
 $header-sns-hover: #57585a;
 
@@ -98,6 +93,5 @@ $side-hover-color: $main-color;
 $footer-color: #1e252c;
 $footer-link-color: #1e252c;
 $footer-hover-color: $main-color;
-
 $footer-01-bg: #fff;
 $footer-02-bg: #fff;

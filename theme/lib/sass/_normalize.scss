@@ -1,5 +1,5 @@
-$nl_border_color: #e5e5e5;
-$nl_gray_bg: #fafafa;
+$nl-border-color: #e5e5e5;
+$nl-gray-bg: #fafafa;
 
 /* HTML5
 -------------------------------------------------- */
@@ -39,23 +39,23 @@ audio:not([controls]) {
 
 html {
   font-size: 100%; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
+  text-size-adjust: 100%; /* 2 */
 }
 
 body {
   margin: 0;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  font-family: '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3',
-    'Hiragino Kaku Gothic Pro', Verdana, 'メイリオ', Meiryo, Osaka,
-    'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  overflow-wrap: break-word;
   word-break: normal;
+  overflow-wrap: break-word;
 }
 
 a {
   transition: all ease-in-out 0.3s;
+
   &:focus,
   &:active,
   &:hover {
@@ -76,13 +76,15 @@ a {
 
 .clearfix {
   *zoom: 1;
-  &:before {
+
+  &::before {
     display: inline-table;
   }
-  &:after {
-    content: '';
+
+  &::after {
     display: block;
     clear: both;
+    content: "";
   }
 }
 
@@ -99,21 +101,23 @@ strong {
 }
 
 blockquote {
-  clear: both;
-  margin: 0 0 28px;
-  padding: 30px 20px 35px 55px;
   position: relative;
-  border: 1px $nl_border_color solid;
-  background: $nl_gray_bg;
-  &:before {
-    content: '';
-    font-family: 'FontAwesome';
-    font-size: 36px;
-    color: #e7e7e7;
+  padding: 30px 20px 35px 55px;
+  margin: 0 0 28px;
+  clear: both;
+  background: $nl-gray-bg;
+  border: 1px $nl-border-color solid;
+
+  &::before {
     position: absolute;
     top: 10px;
     left: 10px;
+    font-family: FontAwesome;
+    font-size: 36px;
+    color: #e7e7e7;
+    content: "";
   }
+
   cite {
     position: absolute;
     right: 20px;
@@ -128,18 +132,18 @@ dfn {
 }
 
 mark {
-  background: #ff0;
   color: #000;
+  background: #ff0;
 }
 
 code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
   overflow-x: scroll;
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
 }
 
 small {
@@ -148,9 +152,9 @@ small {
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -185,7 +189,6 @@ img {
   height: auto;
   vertical-align: middle;
   border: 0;
-  -ms-interpolation-mode: bicubic;
 }
 
 svg:not(:root) {
@@ -201,27 +204,56 @@ figure {
 
 form {
   margin: 0;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 8px 13px;
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  input[type="submit"],
+  button {
+    padding: 12px 20px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 fieldset {
-  border: 1px solid $nl_border_color;
-  margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
+  margin: 0 2px;
+  border: 1px solid $nl-border-color;
 }
 
 legend {
-  border: 0;
   padding: 0;
-  white-space: normal;
   *margin-left: -7px;
+  white-space: normal;
+  border: 0;
 }
 
 button,
 input,
 select,
 textarea {
-  font-size: 100%;
   margin: 0;
+  font-size: 100%;
   vertical-align: baseline;
   *vertical-align: middle;
 }
@@ -232,12 +264,12 @@ input {
 }
 
 button,
-html input[type='button'],
-input[type='reset'],
-input[type='submit'],
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
 .btn {
-  cursor: pointer;
   *overflow: visible;
+  cursor: pointer;
 }
 
 button[disabled],
@@ -245,28 +277,28 @@ input[disabled] {
   cursor: default;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
-  padding: 0;
-  *height: 13px;
   *width: 13px;
+  *height: 13px;
+  padding: 0;
 }
 
-input[type='search'] {
-  -webkit-appearance: textfield;
+input[type="search"] {
+  appearance: textfield;
   box-sizing: border-box;
 }
 
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
-  -webkit-appearance: none;
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  appearance: none;
 }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-  border: 0;
   padding: 0;
+  border: 0;
 }
 
 textarea {
@@ -274,76 +306,51 @@ textarea {
   vertical-align: top;
 }
 
-/* form
----------------------------------------- */
-
-form {
-  input[type='text'],
-  input[type='email'],
-  input[type='url'],
-  input[type='tel'],
-  input[type='number'],
-  input[type='date'],
-  textarea {
-    border-radius: 3px;
-    padding: 8px 13px;
-    max-width: 100%;
-    border: 1px #ccc solid;
-    outline: none;
-    box-sizing: border-box;
-  }
-  textarea {
-    width: 80%;
-  }
-  input[type='submit'],
-  button {
-    padding: 12px 20px;
-    border: none;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
 /* search */
 
 #searchform {
+  padding-bottom: 0;
   overflow: hidden;
   background: #fff;
-  border: 1px solid $nl_border_color;
-  padding-bottom: 0;
+  border: 1px solid $nl-border-color;
   border-radius: 2px;
+
   div {
     position: relative;
     padding-right: 40px;
   }
+
   label {
     display: none;
   }
-  input[type='text'] {
-    line-height: 18px;
+
+  input[type="text"] {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
     padding: 8px 13px;
     font-size: 14px;
-    width: 100%;
-    box-sizing: border-box;
+    line-height: 18px;
     border: none;
-    float: left;
   }
+
   button {
-    float: right;
     position: absolute;
     top: 0;
     right: 0;
-    vertical-align: top;
-    line-height: 18px;
-    border: none;
-    border-radius: 3px;
+    float: right;
     width: 40px;
     padding: 8px 5px;
-    transition: background 0.3s ease-in-out;
-    background: transparent;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome;
     font-size: 21px;
+    line-height: 18px;
     color: #808080;
+    vertical-align: top;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    transition: background 0.3s ease-in-out;
+
     &:hover {
       cursor: pointer;
     }
@@ -354,14 +361,15 @@ form {
 -------------------------------------------------- */
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid $nl_border_color;
+  border-collapse: collapse;
+  border: 1px solid $nl-border-color;
 }
+
 th,
 td {
-  border: 1px solid $nl_border_color;
   padding: 8px 13px;
+  border: 1px solid $nl-border-color;
 }
 
 /* ----------------------------------------
@@ -372,34 +380,36 @@ td {
 
 @media screen and (max-width: 1200px) {
   /* laptop */
+
   /* laptop end */
 }
 
 @media screen and (max-width: 991px) {
   /* tablet */
+
   /* tablet end */
 }
 @media screen and (max-width: 767px) {
   /* phone */
 
   h1 {
-    font-size: 22px;
     margin: 36px 0;
     clear: both;
+    font-size: 22px;
   }
 
   h2 {
-    font-size: 18px;
     margin: 2em 0 1em;
     clear: both;
+    font-size: 18px;
   }
 
   h3,
   h4,
   h5,
   h6 {
-    font-size: 16px;
     margin: 2em 0 1em;
+    font-size: 16px;
   }
 
   /* phone end */

@@ -4,18 +4,15 @@
 
 // color ========================================
 
-// common
-//----------------------------------------
+// common --------------------------------
 $color01-main-color: #1abb9a;
 $color01-key-color: #bb2c46;
 $color01-base-color: #fafafa;
 $color01-text-color: #494d50;
-
 $color01-border-color: #e5e5e5;
 $color01-border-color-light: #ededed;
-
 $color01-gray: #5e6265;
-$color01-gray-light: #cccccc;
+$color01-gray-light: #ccc;
 
 // link ----------------------------------
 
@@ -26,7 +23,6 @@ $color01-side-link-color: lighten($color01-text-color, 20%);
 
 $color01-header-text-logo: #34465c;
 $color01-header-bg: #fff;
-
 $color01-header-sns-link: #ccc;
 $color01-header-sns-hover: #34465c;
 
@@ -62,7 +58,6 @@ $color01-side-hover-color: $color01-main-color;
 $color01-footer-color: #1e252c;
 $color01-footer-link-color: #1e252c;
 $color01-footer-hover-color: $color01-main-color;
-
 $color01-footer-01-bg: #fff;
 $color01-footer-02-bg: #fff;
 
@@ -72,21 +67,24 @@ body.color01 {
 ---------------------------------------- */
 
   body {
-    background: $color01-base-color;
     color: $color01-text-color;
+    background: $color01-base-color;
   }
+
   a {
     color: $color01-link-color;
   }
+
   /* form
 ---------------------------------------- */
 
   form {
-    input[type='submit'],
+    input[type="submit"],
     button {
       background: $color01-main-color;
     }
   }
+
   /* ----------------------------------------
 * header
 ---------------------------------------- */
@@ -94,15 +92,18 @@ body.color01 {
   #header {
     background: $color01-header-bg;
     border-bottom: 1px solid $color01-border-color-light;
+
     #logo {
       a {
         color: $color01-text_color;
       }
     }
+
     #header-sns {
       li {
         a {
           color: $color01-header-sns-link;
+
           &:hover {
             color: $color01-header-sns-hover;
           }
@@ -123,30 +124,35 @@ body.color01 {
     background: $color01-gnav-bg;
     border-top: 1px $color01-border-color-light solid;
     border-bottom: 1px $color01-border-color-light solid;
+
     li {
       &.current-menu-item {
         a {
           border-top: 1px $color01-main_color solid;
         }
       }
+
       a {
-        border-top: 1px $color01-border-color-light solid;
         color: $color01-gnav-link-color;
         background: $color01-gnav-bg;
+        border-top: 1px $color01-border-color-light solid;
+
         &:hover {
           color: $color01-gnav-hover-color;
           border-top: 1px $color01-main_color solid;
         }
       }
+
       .sub-menu {
         li {
           a {
-            background: #2b2b2b;
             color: #fff;
+            background: #2b2b2b;
             border: none;
+
             &:hover {
-              background: #373b3b;
               color: #fff;
+              background: #373b3b;
             }
           }
         }
@@ -176,16 +182,20 @@ body.color01 {
     background: #fff;
     border: 1px $color01-border-color solid;
   }
+
   .post-title {
     a {
       color: $color01-text_color;
+
       &:hover {
         color: $color01-main-color;
       }
     }
   }
+
   .post-meta {
     border-top: 1px $color01-border-color-light solid;
+
     li {
       background: #fff;
     }
@@ -195,59 +205,74 @@ body.color01 {
     hr {
       border-bottom: 1px solid $color01-border-color-light;
     }
+
     h2 {
       border-bottom: 1px solid $color01-border-color-light;
     }
+
     h3 {
       border-left: 5px solid $color01-border-color;
     }
+
     blockquote {
       border: 1px $color01-border-color solid;
-      &:before {
+
+      &::before {
         color: #e7e7e7;
       }
+
       cite {
         color: #808080;
       }
     }
+
     table {
       border: 1px #ddd solid;
+
       th,
       td {
         border: #ddd solid 1px;
       }
+
       th {
         color: #fff;
       }
+
       thead {
         th {
           background: $color01-gray;
         }
       }
+
       tbody {
         th {
           background: lighten($color01-gray, 20%);
         }
       }
+
       &.table-line {
         table,
         th,
         td {
           border-color: #fff;
         }
+
         th {
-          background: transparent;
           color: $color01-text_color;
+          background: transparent;
         }
+
         thead {
           th {
-            background: $color01-gray;
             color: #fff;
+            background: $color01-gray;
           }
         }
+
         tr {
           background: #eee;
         }
+
         tr:nth-child(2n + 1) {
           background: #ddd;
         }
@@ -256,26 +281,31 @@ body.color01 {
   }
 
   .post-cta {
-    background: $color01-post-cta-bg;
     color: $color01-post-cta-color;
+    background: $color01-post-cta-bg;
     border-top: 3px solid $color01-gray;
+
     .cta-post-title {
       border-bottom: 1px solid $color01-border-color;
     }
+
     .post-cta-btn {
       a {
-        background: $color01-post-cta-btn-bg;
         color: $color01-post-cta-btn-color;
+        background: $color01-post-cta-btn-bg;
         border-bottom: 5px solid darken($color01-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color01-post-cta-btn-bg, 10%);
           border-bottom: 5px solid $color01-post-cta-btn-bg;
         }
       }
     }
+
     .btn {
       color: #fff;
       background: $color01-main-color;
+
       &:hover {
         background: $color01-key-color;
       }
@@ -284,76 +314,93 @@ body.color01 {
 
   .post-share {
     border-top: 1px solid $color01-border-color;
+
     .post-share-title {
       color: #fff;
       background-color: #57585a;
     }
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       a {
         border: 1px #eee solid;
+
         &:hover {
           text-decoration: none;
           background: #f7f7f7;
         }
       }
     }
+
     .post-share-facebook {
       a:hover {
         color: $facebook-color;
       }
     }
+
     .post-share-twitter {
       a:hover {
         color: $twitter-color;
       }
     }
+
     .post-share-google {
       a:hover {
         color: $google-color;
       }
     }
+
     .post-share-feedly {
       a:hover {
         color: $feedly-color;
       }
     }
   }
+
   .post-sns {
     border-top: 1px #eee solid;
+
     ul {
       li {
-        border-right: 1px solid #eee;
         color: #929292;
+        border-right: 1px solid #eee;
       }
+
       li:hover {
         background-color: #f7f7f7;
       }
+
       li.post-sns-twitter:hover {
         color: #00aced;
       }
+
       li.post-sns-feedly:hover {
         color: #5acf5f;
       }
+
       li a {
         color: #929292;
       }
+
       li.post-sns-twitter a:hover {
+        color: #fff;
         background-color: #00aced;
-        color: #fff;
       }
+
       li.post-sns-feedly a:hover {
-        background-color: #5acf5f;
         color: #fff;
+        background-color: #5acf5f;
       }
     }
   }
+
   .post-author {
+    color: $color01-text-color;
     border-top: 1px #eee solid;
     border-bottom: 1px #eee solid;
-    color: $color01-text-color;
+
     a {
       color: $color01-main-color;
     }
@@ -365,6 +412,7 @@ body.color01 {
   .comment-list > .comment {
     border-bottom: 1px #eee solid;
   }
+
   .comment-list {
     .children {
       .comment-body {
@@ -383,11 +431,12 @@ body.color01 {
   }
 
   .more-link {
-    border: 1px $color01-main-color solid;
     color: $color01-main_color;
+    border: 1px $color01-main-color solid;
+
     &:hover {
-      background: $color01-main_color;
       color: #fff;
+      background: $color01-main_color;
     }
   }
 
@@ -418,19 +467,22 @@ body.color01 {
         border-bottom: 1px solid $color01-border-color;
       }
     }
+
     a {
       color: $color01-side-link-color;
+
       &:hover {
         color: $color01-main-color;
       }
     }
+
     .post-date {
-      color: #999999;
+      color: #999;
     }
   }
 
   #views-2 ul li span {
-    color: #999999;
+    color: #999;
   }
 
   .widget_recent_entries,
@@ -439,10 +491,11 @@ body.color01 {
   .widget_meta {
     a {
       color: $color01-side-link-color;
-      background: image-url('icont_arw_lit.png') left center no-repeat;
+      background: image-url("icont_arw_lit.png") left center no-repeat;
+
       &:hover {
         color: $color01-side-hover-color;
-        background: image-url('icon_arw_gry.png') left center no-repeat;
+        background: image-url("icon_arw_gry.png") left center no-repeat;
       }
     }
   }
@@ -459,30 +512,35 @@ body.color01 {
 
   #side .share-list-wrap {
     background: $color01-base-color;
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       li {
         a {
-          background: #fff;
           color: $color01-gray;
+          background: #fff;
         }
+
         &.post-share-facebook {
           a:hover {
             color: $facebook-color;
           }
         }
+
         &.post-share-twitter {
           a:hover {
             color: $twitter-color;
           }
         }
+
         &.post-share-google {
           a:hover {
             color: $google-color;
           }
         }
+
         &.post-share-feedly {
           a:hover {
             color: $feedly-color;
@@ -498,17 +556,21 @@ body.color01 {
 
   #footer {
     color: $color01-footer-color;
+
     a {
       color: $color01-footer-link-color;
+
       &:hover {
         color: $color01-footer-hover-color;
       }
     }
   }
+
   .footer-01 {
     background: $color01-footer-01-bg;
     border-top: 1px $color01-border-color-light solid;
   }
+
   .footer-02 {
     background: $color01-footer-02-bg;
     border-top: 1px $color01-border-color-light solid;
@@ -520,27 +582,33 @@ body.color01 {
 
   .single-lp {
     .lp-wrap {
-      border: 1px solid $color01-border-color-light;
       background: $color01-lp-wrap-bg;
+      border: 1px solid $color01-border-color-light;
     }
+
     .lp-thumbnail {
       border: 1px #ccc solid;
     }
+
     #lp-header {
       background: $color01-lp-head-bg;
+
       h1 {
         color: $color01-main-color;
         border-bottom: 1px solid $color01-border-color-light;
       }
     }
+
     .lp-form {
-      background: #494c4e;
       color: #fff;
-      input[type='submit'],
+      background: #494c4e;
+
+      input[type="submit"],
       button {
-        background: $color01-post-cta-btn-bg;
         color: $color01-post-cta-btn-color;
+        background: $color01-post-cta-btn-bg;
         border-bottom: 5px solid darken($color01-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color01-post-cta-btn-bg, 5%);
         }
@@ -558,18 +626,15 @@ body.color01 {
 
 // color ========================================
 
-// common
-//----------------------------------------
+// common --------------------------------
 $color02-main-color: #fb4343;
 $color02-key-color: #58dadf;
 $color02-base-color: #fafafa;
 $color02-text-color: #656364;
-
 $color02-border-color: #e5e5e5;
 $color02-border-color-light: #ededed;
-
 $color02-gray: #5e6265;
-$color02-gray-light: #cccccc;
+$color02-gray-light: #ccc;
 
 // link ----------------------------------
 
@@ -580,7 +645,6 @@ $color02-side-link-color: lighten($color02-text-color, 20%);
 
 $color02-header-text-logo: #4e4e4e;
 $color02-header-bg: #fff;
-
 $color02-header-sns-link: #ccc;
 $color02-header-sns-hover: #4e4e4e;
 
@@ -616,7 +680,6 @@ $color02-side-hover-color: $color02-main-color;
 $color02-footer-color: #1e252c;
 $color02-footer-link-color: #1e252c;
 $color02-footer-hover-color: $color02-main-color;
-
 $color02-footer-01-bg: #fff;
 $color02-footer-02-bg: #fff;
 
@@ -626,21 +689,24 @@ body.color02 {
 ---------------------------------------- */
 
   body {
-    background: $color02-base-color;
     color: $color02-text-color;
+    background: $color02-base-color;
   }
+
   a {
     color: $color02-link-color;
   }
+
   /* form
 ---------------------------------------- */
 
   form {
-    input[type='submit'],
+    input[type="submit"],
     button {
       background: $color02-main-color;
     }
   }
+
   /* ----------------------------------------
 * header
 ---------------------------------------- */
@@ -648,15 +714,18 @@ body.color02 {
   #header {
     background: $color02-header-bg;
     border-bottom: 1px solid $color02-border-color-light;
+
     #logo {
       a {
         color: $color02-text_color;
       }
     }
+
     #header-sns {
       li {
         a {
           color: $color02-header-sns-link;
+
           &:hover {
             color: $color02-header-sns-hover;
           }
@@ -677,30 +746,35 @@ body.color02 {
     background: $color02-gnav-bg;
     border-top: 1px $color02-border-color-light solid;
     border-bottom: 1px $color02-border-color-light solid;
+
     li {
       &.current-menu-item {
         a {
           border-top: 1px $color02-main_color solid;
         }
       }
+
       a {
-        border-top: 1px $color02-border-color-light solid;
         color: $color02-gnav-link-color;
         background: $color02-gnav-bg;
+        border-top: 1px $color02-border-color-light solid;
+
         &:hover {
           color: $color02-gnav-hover-color;
           border-top: 1px $color02-main_color solid;
         }
       }
+
       .sub-menu {
         li {
           a {
-            background: #2b2b2b;
             color: #fff;
+            background: #2b2b2b;
             border: none;
+
             &:hover {
-              background: #373b3b;
               color: #fff;
+              background: #373b3b;
             }
           }
         }
@@ -730,16 +804,20 @@ body.color02 {
     background: #fff;
     border: 1px $color02-border-color solid;
   }
+
   .post-title {
     a {
       color: $color02-text_color;
+
       &:hover {
         color: $color02-main-color;
       }
     }
   }
+
   .post-meta {
     border-top: 1px $color02-border-color-light solid;
+
     li {
       background: #fff;
     }
@@ -749,59 +827,74 @@ body.color02 {
     hr {
       border-bottom: 1px solid $color02-border-color-light;
     }
+
     h2 {
       border-bottom: 1px solid $color02-border-color-light;
     }
+
     h3 {
       border-left: 5px solid $color02-border-color;
     }
+
     blockquote {
       border: 1px $color02-border-color solid;
-      &:before {
+
+      &::before {
         color: #e7e7e7;
       }
+
       cite {
         color: #808080;
       }
     }
+
     table {
       border: 1px #ddd solid;
+
       th,
       td {
         border: #ddd solid 1px;
       }
+
       th {
         color: #fff;
       }
+
       thead {
         th {
           background: $color02-gray;
         }
       }
+
       tbody {
         th {
           background: lighten($color02-gray, 20%);
         }
       }
+
       &.table-line {
         table,
         th,
         td {
           border-color: #fff;
         }
+
         th {
-          background: transparent;
           color: $color02-text_color;
+          background: transparent;
         }
+
         thead {
           th {
-            background: $color02-gray;
             color: #fff;
+            background: $color02-gray;
           }
         }
+
         tr {
           background: #eee;
         }
+
         tr:nth-child(2n + 1) {
           background: #ddd;
         }
@@ -810,26 +903,31 @@ body.color02 {
   }
 
   .post-cta {
-    background: $color02-post-cta-bg;
     color: $color02-post-cta-color;
+    background: $color02-post-cta-bg;
     border-top: 3px solid $color02-gray;
+
     .cta-post-title {
       border-bottom: 1px solid $color02-border-color;
     }
+
     .post-cta-btn {
       a {
-        background: $color02-post-cta-btn-bg;
         color: $color02-post-cta-btn-color;
+        background: $color02-post-cta-btn-bg;
         border-bottom: 5px solid darken($color02-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color02-post-cta-btn-bg, 10%);
           border-bottom: 5px solid $color02-post-cta-btn-bg;
         }
       }
     }
+
     .btn {
       color: #fff;
       background: $color02-main-color;
+
       &:hover {
         background: $color02-key-color;
       }
@@ -838,76 +936,93 @@ body.color02 {
 
   .post-share {
     border-top: 1px solid $color02-border-color;
+
     .post-share-title {
       color: #fff;
       background-color: #57585a;
     }
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       a {
         border: 1px #eee solid;
+
         &:hover {
           text-decoration: none;
           background: #f7f7f7;
         }
       }
     }
+
     .post-share-facebook {
       a:hover {
         color: $facebook-color;
       }
     }
+
     .post-share-twitter {
       a:hover {
         color: $twitter-color;
       }
     }
+
     .post-share-google {
       a:hover {
         color: $google-color;
       }
     }
+
     .post-share-feedly {
       a:hover {
         color: $feedly-color;
       }
     }
   }
+
   .post-sns {
     border-top: 1px #eee solid;
+
     ul {
       li {
-        border-right: 1px solid #eee;
         color: #929292;
+        border-right: 1px solid #eee;
       }
+
       li:hover {
         background-color: #f7f7f7;
       }
+
       li.post-sns-twitter:hover {
         color: #00aced;
       }
+
       li.post-sns-feedly:hover {
         color: #5acf5f;
       }
+
       li a {
         color: #929292;
       }
+
       li.post-sns-twitter a:hover {
+        color: #fff;
         background-color: #00aced;
-        color: #fff;
       }
+
       li.post-sns-feedly a:hover {
-        background-color: #5acf5f;
         color: #fff;
+        background-color: #5acf5f;
       }
     }
   }
+
   .post-author {
+    color: $color02-text-color;
     border-top: 1px #eee solid;
     border-bottom: 1px #eee solid;
-    color: $color02-text-color;
+
     a {
       color: $color02-main-color;
     }
@@ -919,6 +1034,7 @@ body.color02 {
   .comment-list > .comment {
     border-bottom: 1px #eee solid;
   }
+
   .comment-list {
     .children {
       .comment-body {
@@ -937,11 +1053,12 @@ body.color02 {
   }
 
   .more-link {
-    border: 1px $color02-main-color solid;
     color: $color02-main_color;
+    border: 1px $color02-main-color solid;
+
     &:hover {
-      background: $color02-main_color;
       color: #fff;
+      background: $color02-main_color;
     }
   }
 
@@ -972,19 +1089,22 @@ body.color02 {
         border-bottom: 1px solid $color02-border-color;
       }
     }
+
     a {
       color: $color02-side-link-color;
+
       &:hover {
         color: $color02-main-color;
       }
     }
+
     .post-date {
-      color: #999999;
+      color: #999;
     }
   }
 
   #views-2 ul li span {
-    color: #999999;
+    color: #999;
   }
 
   .widget_recent_entries,
@@ -993,10 +1113,11 @@ body.color02 {
   .widget_meta {
     a {
       color: $color02-side-link-color;
-      background: image-url('icont_arw_lit.png') left center no-repeat;
+      background: image-url("icont_arw_lit.png") left center no-repeat;
+
       &:hover {
         color: $color02-side-hover-color;
-        background: image-url('icon_arw_gry.png') left center no-repeat;
+        background: image-url("icon_arw_gry.png") left center no-repeat;
       }
     }
   }
@@ -1013,30 +1134,35 @@ body.color02 {
 
   #side .share-list-wrap {
     background: $color02-base-color;
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       li {
         a {
-          background: #fff;
           color: $color02-gray;
+          background: #fff;
         }
+
         &.post-share-facebook {
           a:hover {
             color: $facebook-color;
           }
         }
+
         &.post-share-twitter {
           a:hover {
             color: $twitter-color;
           }
         }
+
         &.post-share-google {
           a:hover {
             color: $google-color;
           }
         }
+
         &.post-share-feedly {
           a:hover {
             color: $feedly-color;
@@ -1052,17 +1178,21 @@ body.color02 {
 
   #footer {
     color: $color02-footer-color;
+
     a {
       color: $color02-footer-link-color;
+
       &:hover {
         color: $color02-footer-hover-color;
       }
     }
   }
+
   .footer-01 {
     background: $color02-footer-01-bg;
     border-top: 1px $color02-border-color-light solid;
   }
+
   .footer-02 {
     background: $color02-footer-02-bg;
     border-top: 1px $color02-border-color-light solid;
@@ -1074,27 +1204,33 @@ body.color02 {
 
   .single-lp {
     .lp-wrap {
-      border: 1px solid $color02-border-color-light;
       background: $color02-lp-wrap-bg;
+      border: 1px solid $color02-border-color-light;
     }
+
     .lp-thumbnail {
       border: 1px #ccc solid;
     }
+
     #lp-header {
       background: $color02-lp-head-bg;
+
       h1 {
         color: $color02-main-color;
         border-bottom: 1px solid $color02-border-color-light;
       }
     }
+
     .lp-form {
-      background: #494c4e;
       color: #fff;
-      input[type='submit'],
+      background: #494c4e;
+
+      input[type="submit"],
       button {
-        background: $color02-post-cta-btn-bg;
         color: $color02-post-cta-btn-color;
+        background: $color02-post-cta-btn-bg;
         border-bottom: 5px solid darken($color02-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color02-post-cta-btn-bg, 5%);
         }
@@ -1112,18 +1248,15 @@ body.color02 {
 
 // color ========================================
 
-// common
-//----------------------------------------
+// common --------------------------------
 $color03-main-color: #f37d3d;
 $color03-key-color: #23b0f3;
 $color03-base-color: #fafafa;
 $color03-text-color: #444756;
-
 $color03-border-color: #e5e5e5;
 $color03-border-color-light: #ededed;
-
 $color03-gray: #5e6265;
-$color03-gray-light: #cccccc;
+$color03-gray-light: #ccc;
 
 // link ----------------------------------
 
@@ -1134,7 +1267,6 @@ $color03-side-link-color: lighten($color03-text-color, 20%);
 
 $color03-header-text-logo: #21262d;
 $color03-header-bg: #fff;
-
 $color03-header-sns-link: #ccc;
 $color03-header-sns-hover: #21262d;
 
@@ -1170,7 +1302,6 @@ $color03-side-hover-color: $color03-main-color;
 $color03-footer-color: #1e252c;
 $color03-footer-link-color: #1e252c;
 $color03-footer-hover-color: $color03-main-color;
-
 $color03-footer-01-bg: #fff;
 $color03-footer-02-bg: #fff;
 
@@ -1180,21 +1311,24 @@ body.color03 {
 ---------------------------------------- */
 
   body {
-    background: $color03-base-color;
     color: $color03-text-color;
+    background: $color03-base-color;
   }
+
   a {
     color: $color03-link-color;
   }
+
   /* form
 ---------------------------------------- */
 
   form {
-    input[type='submit'],
+    input[type="submit"],
     button {
       background: $color03-main-color;
     }
   }
+
   /* ----------------------------------------
 * header
 ---------------------------------------- */
@@ -1202,15 +1336,18 @@ body.color03 {
   #header {
     background: $color03-header-bg;
     border-bottom: 1px solid $color03-border-color-light;
+
     #logo {
       a {
         color: $color03-text_color;
       }
     }
+
     #header-sns {
       li {
         a {
           color: $color03-header-sns-link;
+
           &:hover {
             color: $color03-header-sns-hover;
           }
@@ -1231,30 +1368,35 @@ body.color03 {
     background: $color03-gnav-bg;
     border-top: 1px $color03-border-color-light solid;
     border-bottom: 1px $color03-border-color-light solid;
+
     li {
       &.current-menu-item {
         a {
           border-top: 1px $color03-main_color solid;
         }
       }
+
       a {
-        border-top: 1px $color03-border-color-light solid;
         color: $color03-gnav-link-color;
         background: $color03-gnav-bg;
+        border-top: 1px $color03-border-color-light solid;
+
         &:hover {
           color: $color03-gnav-hover-color;
           border-top: 1px $color03-main_color solid;
         }
       }
+
       .sub-menu {
         li {
           a {
-            background: #2b2b2b;
             color: #fff;
+            background: #2b2b2b;
             border: none;
+
             &:hover {
-              background: #373b3b;
               color: #fff;
+              background: #373b3b;
             }
           }
         }
@@ -1284,16 +1426,20 @@ body.color03 {
     background: #fff;
     border: 1px $color03-border-color solid;
   }
+
   .post-title {
     a {
       color: $color03-text_color;
+
       &:hover {
         color: $color03-main-color;
       }
     }
   }
+
   .post-meta {
     border-top: 1px $color03-border-color-light solid;
+
     li {
       background: #fff;
     }
@@ -1303,59 +1449,74 @@ body.color03 {
     hr {
       border-bottom: 1px solid $color03-border-color-light;
     }
+
     h2 {
       border-bottom: 1px solid $color03-border-color-light;
     }
+
     h3 {
       border-left: 5px solid $color03-border-color;
     }
+
     blockquote {
       border: 1px $color03-border-color solid;
-      &:before {
+
+      &::before {
         color: #e7e7e7;
       }
+
       cite {
         color: #808080;
       }
     }
+
     table {
       border: 1px #ddd solid;
+
       th,
       td {
         border: #ddd solid 1px;
       }
+
       th {
         color: #fff;
       }
+
       thead {
         th {
           background: $color03-gray;
         }
       }
+
       tbody {
         th {
           background: lighten($color03-gray, 20%);
         }
       }
+
       &.table-line {
         table,
         th,
         td {
           border-color: #fff;
         }
+
         th {
-          background: transparent;
           color: $color03-text_color;
+          background: transparent;
         }
+
         thead {
           th {
-            background: $color03-gray;
             color: #fff;
+            background: $color03-gray;
           }
         }
+
         tr {
           background: #eee;
         }
+
         tr:nth-child(2n + 1) {
           background: #ddd;
         }
@@ -1364,26 +1525,31 @@ body.color03 {
   }
 
   .post-cta {
-    background: $color03-post-cta-bg;
     color: $color03-post-cta-color;
+    background: $color03-post-cta-bg;
     border-top: 3px solid $color03-gray;
+
     .cta-post-title {
       border-bottom: 1px solid $color03-border-color;
     }
+
     .post-cta-btn {
       a {
-        background: $color03-post-cta-btn-bg;
         color: $color03-post-cta-btn-color;
+        background: $color03-post-cta-btn-bg;
         border-bottom: 5px solid darken($color03-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color03-post-cta-btn-bg, 10%);
           border-bottom: 5px solid $color03-post-cta-btn-bg;
         }
       }
     }
+
     .btn {
       color: #fff;
       background: $color03-main-color;
+
       &:hover {
         background: $color03-key-color;
       }
@@ -1392,76 +1558,93 @@ body.color03 {
 
   .post-share {
     border-top: 1px solid $color03-border-color;
+
     .post-share-title {
       color: #fff;
       background-color: #57585a;
     }
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       a {
         border: 1px #eee solid;
+
         &:hover {
           text-decoration: none;
           background: #f7f7f7;
         }
       }
     }
+
     .post-share-facebook {
       a:hover {
         color: $facebook-color;
       }
     }
+
     .post-share-twitter {
       a:hover {
         color: $twitter-color;
       }
     }
+
     .post-share-google {
       a:hover {
         color: $google-color;
       }
     }
+
     .post-share-feedly {
       a:hover {
         color: $feedly-color;
       }
     }
   }
+
   .post-sns {
     border-top: 1px #eee solid;
+
     ul {
       li {
-        border-right: 1px solid #eee;
         color: #929292;
+        border-right: 1px solid #eee;
       }
+
       li:hover {
         background-color: #f7f7f7;
       }
+
       li.post-sns-twitter:hover {
         color: #00aced;
       }
+
       li.post-sns-feedly:hover {
         color: #5acf5f;
       }
+
       li a {
         color: #929292;
       }
+
       li.post-sns-twitter a:hover {
+        color: #fff;
         background-color: #00aced;
-        color: #fff;
       }
+
       li.post-sns-feedly a:hover {
-        background-color: #5acf5f;
         color: #fff;
+        background-color: #5acf5f;
       }
     }
   }
+
   .post-author {
+    color: $color03-text-color;
     border-top: 1px #eee solid;
     border-bottom: 1px #eee solid;
-    color: $color03-text-color;
+
     a {
       color: $color03-main-color;
     }
@@ -1473,6 +1656,7 @@ body.color03 {
   .comment-list > .comment {
     border-bottom: 1px #eee solid;
   }
+
   .comment-list {
     .children {
       .comment-body {
@@ -1491,11 +1675,12 @@ body.color03 {
   }
 
   .more-link {
-    border: 1px $color03-main-color solid;
     color: $color03-main_color;
+    border: 1px $color03-main-color solid;
+
     &:hover {
-      background: $color03-main_color;
       color: #fff;
+      background: $color03-main_color;
     }
   }
 
@@ -1526,19 +1711,22 @@ body.color03 {
         border-bottom: 1px solid $color03-border-color;
       }
     }
+
     a {
       color: $color03-side-link-color;
+
       &:hover {
         color: $color03-main-color;
       }
     }
+
     .post-date {
-      color: #999999;
+      color: #999;
     }
   }
 
   #views-2 ul li span {
-    color: #999999;
+    color: #999;
   }
 
   .widget_recent_entries,
@@ -1547,10 +1735,11 @@ body.color03 {
   .widget_meta {
     a {
       color: $color03-side-link-color;
-      background: image-url('icont_arw_lit.png') left center no-repeat;
+      background: image-url("icont_arw_lit.png") left center no-repeat;
+
       &:hover {
         color: $color03-side-hover-color;
-        background: image-url('icon_arw_gry.png') left center no-repeat;
+        background: image-url("icon_arw_gry.png") left center no-repeat;
       }
     }
   }
@@ -1567,30 +1756,35 @@ body.color03 {
 
   #side .share-list-wrap {
     background: $color03-base-color;
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       li {
         a {
-          background: #fff;
           color: $color03-gray;
+          background: #fff;
         }
+
         &.post-share-facebook {
           a:hover {
             color: $facebook-color;
           }
         }
+
         &.post-share-twitter {
           a:hover {
             color: $twitter-color;
           }
         }
+
         &.post-share-google {
           a:hover {
             color: $google-color;
           }
         }
+
         &.post-share-feedly {
           a:hover {
             color: $feedly-color;
@@ -1606,17 +1800,21 @@ body.color03 {
 
   #footer {
     color: $color03-footer-color;
+
     a {
       color: $color03-footer-link-color;
+
       &:hover {
         color: $color03-footer-hover-color;
       }
     }
   }
+
   .footer-01 {
     background: $color03-footer-01-bg;
     border-top: 1px $color03-border-color-light solid;
   }
+
   .footer-02 {
     background: $color03-footer-02-bg;
     border-top: 1px $color03-border-color-light solid;
@@ -1628,27 +1826,33 @@ body.color03 {
 
   .single-lp {
     .lp-wrap {
-      border: 1px solid $color03-border-color-light;
       background: $color03-lp-wrap-bg;
+      border: 1px solid $color03-border-color-light;
     }
+
     .lp-thumbnail {
       border: 1px #ccc solid;
     }
+
     #lp-header {
       background: $color03-lp-head-bg;
+
       h1 {
         color: $color03-main-color;
         border-bottom: 1px solid $color03-border-color-light;
       }
     }
+
     .lp-form {
-      background: #494c4e;
       color: #fff;
-      input[type='submit'],
+      background: #494c4e;
+
+      input[type="submit"],
       button {
-        background: $color03-post-cta-btn-bg;
         color: $color03-post-cta-btn-color;
+        background: $color03-post-cta-btn-bg;
         border-bottom: 5px solid darken($color03-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color03-post-cta-btn-bg, 5%);
         }
@@ -1666,18 +1870,15 @@ body.color03 {
 
 // color ========================================
 
-// common
-//----------------------------------------
+// common --------------------------------
 $color04-main-color: #f6706f;
 $color04-key-color: #5ee1e1;
 $color04-base-color: #fafafa;
 $color04-text-color: #474747;
-
 $color04-border-color: #e5e5e5;
 $color04-border-color-light: #ededed;
-
 $color04-gray: #5e6265;
-$color04-gray-light: #cccccc;
+$color04-gray-light: #ccc;
 
 // link ----------------------------------
 
@@ -1688,7 +1889,6 @@ $color04-side-link-color: lighten($color04-text-color, 20%);
 
 $color04-header-text-logo: #2e1a1b;
 $color04-header-bg: #fff;
-
 $color04-header-sns-link: #ccc;
 $color04-header-sns-hover: #34465c;
 
@@ -1724,7 +1924,6 @@ $color04-side-hover-color: $color04-main-color;
 $color04-footer-color: #1e252c;
 $color04-footer-link-color: #1e252c;
 $color04-footer-hover-color: $color04-main-color;
-
 $color04-footer-01-bg: #fff;
 $color04-footer-02-bg: #fff;
 
@@ -1734,21 +1933,24 @@ body.color04 {
 ---------------------------------------- */
 
   body {
-    background: $color04-base-color;
     color: $color04-text-color;
+    background: $color04-base-color;
   }
+
   a {
     color: $color04-link-color;
   }
+
   /* form
 ---------------------------------------- */
 
   form {
-    input[type='submit'],
+    input[type="submit"],
     button {
       background: $color04-main-color;
     }
   }
+
   /* ----------------------------------------
 * header
 ---------------------------------------- */
@@ -1756,15 +1958,18 @@ body.color04 {
   #header {
     background: $color04-header-bg;
     border-bottom: 1px solid $color04-border-color-light;
+
     #logo {
       a {
         color: $color04-text_color;
       }
     }
+
     #header-sns {
       li {
         a {
           color: $color04-header-sns-link;
+
           &:hover {
             color: $color04-header-sns-hover;
           }
@@ -1785,30 +1990,35 @@ body.color04 {
     background: $color04-gnav-bg;
     border-top: 1px $color04-border-color-light solid;
     border-bottom: 1px $color04-border-color-light solid;
+
     li {
       &.current-menu-item {
         a {
           border-top: 1px $color04-main_color solid;
         }
       }
+
       a {
-        border-top: 1px $color04-border-color-light solid;
         color: $color04-gnav-link-color;
         background: $color04-gnav-bg;
+        border-top: 1px $color04-border-color-light solid;
+
         &:hover {
           color: $color04-gnav-hover-color;
           border-top: 1px $color04-main_color solid;
         }
       }
+
       .sub-menu {
         li {
           a {
-            background: #2b2b2b;
             color: #fff;
+            background: #2b2b2b;
             border: none;
+
             &:hover {
-              background: #373b3b;
               color: #fff;
+              background: #373b3b;
             }
           }
         }
@@ -1838,16 +2048,20 @@ body.color04 {
     background: #fff;
     border: 1px $color04-border-color solid;
   }
+
   .post-title {
     a {
       color: $color04-text_color;
+
       &:hover {
         color: $color04-main-color;
       }
     }
   }
+
   .post-meta {
     border-top: 1px $color04-border-color-light solid;
+
     li {
       background: #fff;
     }
@@ -1857,59 +2071,74 @@ body.color04 {
     hr {
       border-bottom: 1px solid $color04-border-color-light;
     }
+
     h2 {
       border-bottom: 1px solid $color04-border-color-light;
     }
+
     h3 {
       border-left: 5px solid $color04-border-color;
     }
+
     blockquote {
       border: 1px $color04-border-color solid;
-      &:before {
+
+      &::before {
         color: #e7e7e7;
       }
+
       cite {
         color: #808080;
       }
     }
+
     table {
       border: 1px #ddd solid;
+
       th,
       td {
         border: #ddd solid 1px;
       }
+
       th {
         color: #fff;
       }
+
       thead {
         th {
           background: $color04-gray;
         }
       }
+
       tbody {
         th {
           background: lighten($color04-gray, 20%);
         }
       }
+
       &.table-line {
         table,
         th,
         td {
           border-color: #fff;
         }
+
         th {
-          background: transparent;
           color: $color04-text_color;
+          background: transparent;
         }
+
         thead {
           th {
-            background: $color04-gray;
             color: #fff;
+            background: $color04-gray;
           }
         }
+
         tr {
           background: #eee;
         }
+
         tr:nth-child(2n + 1) {
           background: #ddd;
         }
@@ -1918,26 +2147,31 @@ body.color04 {
   }
 
   .post-cta {
-    background: $color04-post-cta-bg;
     color: $color04-post-cta-color;
+    background: $color04-post-cta-bg;
     border-top: 3px solid $color04-gray;
+
     .cta-post-title {
       border-bottom: 1px solid $color04-border-color;
     }
+
     .post-cta-btn {
       a {
-        background: $color04-post-cta-btn-bg;
         color: $color04-post-cta-btn-color;
+        background: $color04-post-cta-btn-bg;
         border-bottom: 5px solid darken($color04-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color04-post-cta-btn-bg, 10%);
           border-bottom: 5px solid $color04-post-cta-btn-bg;
         }
       }
     }
+
     .btn {
       color: #fff;
       background: $color04-main-color;
+
       &:hover {
         background: $color04-key-color;
       }
@@ -1946,76 +2180,93 @@ body.color04 {
 
   .post-share {
     border-top: 1px solid $color04-border-color;
+
     .post-share-title {
       color: #fff;
       background-color: #57585a;
     }
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       a {
         border: 1px #eee solid;
+
         &:hover {
           text-decoration: none;
           background: #f7f7f7;
         }
       }
     }
+
     .post-share-facebook {
       a:hover {
         color: $facebook-color;
       }
     }
+
     .post-share-twitter {
       a:hover {
         color: $twitter-color;
       }
     }
+
     .post-share-google {
       a:hover {
         color: $google-color;
       }
     }
+
     .post-share-feedly {
       a:hover {
         color: $feedly-color;
       }
     }
   }
+
   .post-sns {
     border-top: 1px #eee solid;
+
     ul {
       li {
-        border-right: 1px solid #eee;
         color: #929292;
+        border-right: 1px solid #eee;
       }
+
       li:hover {
         background-color: #f7f7f7;
       }
+
       li.post-sns-twitter:hover {
         color: #00aced;
       }
+
       li.post-sns-feedly:hover {
         color: #5acf5f;
       }
+
       li a {
         color: #929292;
       }
+
       li.post-sns-twitter a:hover {
+        color: #fff;
         background-color: #00aced;
-        color: #fff;
       }
+
       li.post-sns-feedly a:hover {
-        background-color: #5acf5f;
         color: #fff;
+        background-color: #5acf5f;
       }
     }
   }
+
   .post-author {
+    color: $color04-text-color;
     border-top: 1px #eee solid;
     border-bottom: 1px #eee solid;
-    color: $color04-text-color;
+
     a {
       color: $color04-main-color;
     }
@@ -2027,6 +2278,7 @@ body.color04 {
   .comment-list > .comment {
     border-bottom: 1px #eee solid;
   }
+
   .comment-list {
     .children {
       .comment-body {
@@ -2045,11 +2297,12 @@ body.color04 {
   }
 
   .more-link {
-    border: 1px $color04-main-color solid;
     color: $color04-main_color;
+    border: 1px $color04-main-color solid;
+
     &:hover {
-      background: $color04-main_color;
       color: #fff;
+      background: $color04-main_color;
     }
   }
 
@@ -2080,19 +2333,22 @@ body.color04 {
         border-bottom: 1px solid $color04-border-color;
       }
     }
+
     a {
       color: $color04-side-link-color;
+
       &:hover {
         color: $color04-main-color;
       }
     }
+
     .post-date {
-      color: #999999;
+      color: #999;
     }
   }
 
   #views-2 ul li span {
-    color: #999999;
+    color: #999;
   }
 
   .widget_recent_entries,
@@ -2101,10 +2357,11 @@ body.color04 {
   .widget_meta {
     a {
       color: $color04-side-link-color;
-      background: image-url('icont_arw_lit.png') left center no-repeat;
+      background: image-url("icont_arw_lit.png") left center no-repeat;
+
       &:hover {
         color: $color04-side-hover-color;
-        background: image-url('icon_arw_gry.png') left center no-repeat;
+        background: image-url("icon_arw_gry.png") left center no-repeat;
       }
     }
   }
@@ -2121,30 +2378,35 @@ body.color04 {
 
   #side .share-list-wrap {
     background: $color04-base-color;
+
     .post-share-list1,
     .post-share-list2,
     .post-share-list3,
     .post-share-list4 {
       li {
         a {
-          background: #fff;
           color: $color04-gray;
+          background: #fff;
         }
+
         &.post-share-facebook {
           a:hover {
             color: $facebook-color;
           }
         }
+
         &.post-share-twitter {
           a:hover {
             color: $twitter-color;
           }
         }
+
         &.post-share-google {
           a:hover {
             color: $google-color;
           }
         }
+
         &.post-share-feedly {
           a:hover {
             color: $feedly-color;
@@ -2160,17 +2422,21 @@ body.color04 {
 
   #footer {
     color: $color04-footer-color;
+
     a {
       color: $color04-footer-link-color;
+
       &:hover {
         color: $color04-footer-hover-color;
       }
     }
   }
+
   .footer-01 {
     background: $color04-footer-01-bg;
     border-top: 1px $color04-border-color-light solid;
   }
+
   .footer-02 {
     background: $color04-footer-02-bg;
     border-top: 1px $color04-border-color-light solid;
@@ -2182,27 +2448,33 @@ body.color04 {
 
   .single-lp {
     .lp-wrap {
-      border: 1px solid $color04-border-color-light;
       background: $color04-lp-wrap-bg;
+      border: 1px solid $color04-border-color-light;
     }
+
     .lp-thumbnail {
       border: 1px #ccc solid;
     }
+
     #lp-header {
       background: $color04-lp-head-bg;
+
       h1 {
         color: $color04-main-color;
         border-bottom: 1px solid $color04-border-color-light;
       }
     }
+
     .lp-form {
-      background: #494c4e;
       color: #fff;
-      input[type='submit'],
+      background: #494c4e;
+
+      input[type="submit"],
       button {
-        background: $color04-post-cta-btn-bg;
         color: $color04-post-cta-btn-color;
+        background: $color04-post-cta-btn-bg;
         border-bottom: 5px solid darken($color04-post-cta-btn-bg, 10%);
+
         &:hover {
           background: lighten($color04-post-cta-btn-bg, 5%);
         }

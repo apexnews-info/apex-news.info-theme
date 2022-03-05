@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/apexnews-info/apex-news.info-theme/issues"
   },
-  "homepage": "https://github.com/apexnews-info/apex-news.info-theme#readme"
+  "homepage": "https://github.com/apexnews-info/apex-news.info-theme#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.1.0"
+  }
 }
