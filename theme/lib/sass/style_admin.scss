@@ -65,7 +65,7 @@ small {
   }
 
   #layout-1 label {
-    background: url(./lib/images/admin/layout_01.png) no-repeat left top;
+    background: url("./lib/images/admin/layout_01.png") no-repeat left top;
 
     &.checked {
       background-position: left bottom;
@@ -73,7 +73,7 @@ small {
   }
 
   #layout-2 label {
-    background: url(./lib/images/admin/layout_02.png) no-repeat left top;
+    background: url("./lib/images/admin/layout_02.png") no-repeat left top;
 
     &.checked {
       background-position: left bottom;
@@ -81,7 +81,7 @@ small {
   }
 
   #layout-3 label {
-    background: url(./lib/images/admin/layout_03.png) no-repeat left top;
+    background: url("./lib/images/admin/layout_03.png") no-repeat left top;
 
     &.checked {
       background-position: left bottom;
@@ -97,11 +97,7 @@ small {
   }
 }
 
-/*  */
 .cmb_id__bzb_post_check {
-  input {
-  }
-
   label {
     font-size: 11px;
   }
@@ -170,9 +166,6 @@ small {
 * 3ヶ月推移
 ---------------------------------------- */
 #disp_3term_hikaku {
-  tr {
-  }
-
   th {
     text-align: center;
     vertical-align: middle;
@@ -189,9 +182,6 @@ small {
 ---------------------------------------- */
 #dashboard-widgets-wrap #disp_gender_table {
   margin-bottom: -3px;
-
-  tr {
-  }
 
   tr:nth-child(even) {
     background-color: #fff;
@@ -224,9 +214,6 @@ small {
 ---------------------------------------- */
 #disp_age .disp_age_table {
   margin-bottom: -3px;
-
-  tr {
-  }
 
   tr:nth-child(even) {
     background-color: #fff;
@@ -289,9 +276,6 @@ small {
 ---------------------------------------- */
 #disp_device .disp_device_table {
   margin-bottom: -3px;
-
-  tr {
-  }
 
   th {
     width: 30%;

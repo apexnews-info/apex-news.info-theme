@@ -177,7 +177,7 @@ form {
         margin-right: 0;
         border-bottom: none;
 
-        &:list-child {
+        &:last-child {
           border-bottom: none;
         }
 
@@ -580,13 +580,11 @@ article.page {
   }
 
   .post-share-list4 {
+    text-align: center;
+
     li {
       width: 22.92%;
     }
-  }
-
-  .post-share-list4 {
-    text-align: center;
 
     i,
     .big {
@@ -666,7 +664,6 @@ article.page {
     li:hover {
       background-color: #f7f7f7;
       transition: all ease-in-out 0.3s;
-      transition: all ease-in-out 0.3s;
     }
 
     li.post-sns-twitter:hover {
@@ -690,7 +687,6 @@ article.page {
     }
 
     li a:hover {
-      transition: all ease-in-out 0.3s;
       transition: all ease-in-out 0.3s;
     }
 
@@ -1002,7 +998,9 @@ div.post-share-fb .fb_iframe_widget span {
   }
 
   textarea {
-    width: 80%;
+    width: 95%;
+    padding-right: 2%;
+    padding-left: 2%;
     margin: 20px 0;
     border-radius: 3px;
   }
@@ -1056,14 +1054,6 @@ div.post-share-fb .fb_iframe_widget span {
 
   &:hover {
     cursor: pointer;
-  }
-}
-
-.comment-form-comment {
-  textarea {
-    width: 95%;
-    padding-right: 2%;
-    padding-left: 2%;
   }
 }
 
@@ -1227,8 +1217,8 @@ div.post-share-fb .fb_iframe_widget span {
   line-height: 1.6;
 
   .side-title {
-    margin: 0 0 32px;
-    font-size: 15px;
+    margin: 0 0 13px;
+    font-size: 16px;
   }
 
   ul {
@@ -1236,11 +1226,6 @@ div.post-share-fb .fb_iframe_widget span {
       padding: 16px 0;
       border-bottom: 1px solid $border-color;
     }
-  }
-
-  .side-title {
-    margin: 0 0 13px;
-    font-size: 16px;
   }
 
   a {
@@ -1509,7 +1494,6 @@ div.post-share-fb .fb_iframe_widget span {
   .lp-thumbnail {
     float: right;
     margin: 0 0 13px 13px;
-    border: 1px #ccc solid;
     border: 1px #ccc solid;
 
     img {

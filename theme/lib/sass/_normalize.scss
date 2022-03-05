@@ -1,5 +1,5 @@
-$nl_border_color: #e5e5e5;
-$nl_gray_bg: #fafafa;
+$nl-border-color: #e5e5e5;
+$nl-gray-bg: #fafafa;
 
 /* HTML5
 -------------------------------------------------- */
@@ -39,7 +39,6 @@ audio:not([controls]) {
 
 html {
   font-size: 100%; /* 1 */
-  text-size-adjust: 100%; /* 2 */
   text-size-adjust: 100%; /* 2 */
 }
 
@@ -106,8 +105,8 @@ blockquote {
   padding: 30px 20px 35px 55px;
   margin: 0 0 28px;
   clear: both;
-  background: $nl_gray_bg;
-  border: 1px $nl_border_color solid;
+  background: $nl-gray-bg;
+  border: 1px $nl-border-color solid;
 
   &::before {
     position: absolute;
@@ -190,7 +189,6 @@ img {
   height: auto;
   vertical-align: middle;
   border: 0;
-  interpolation-mode: bicubic;
 }
 
 svg:not(:root) {
@@ -206,12 +204,41 @@ figure {
 
 form {
   margin: 0;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 8px 13px;
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  input[type="submit"],
+  button {
+    padding: 12px 20px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 fieldset {
   padding: 0.35em 0.625em 0.75em;
   margin: 0 2px;
-  border: 1px solid $nl_border_color;
+  border: 1px solid $nl-border-color;
 }
 
 legend {
@@ -279,47 +306,13 @@ textarea {
   vertical-align: top;
 }
 
-/* form
----------------------------------------- */
-
-form {
-  input[type="text"],
-  input[type="email"],
-  input[type="url"],
-  input[type="tel"],
-  input[type="number"],
-  input[type="date"],
-  textarea {
-    box-sizing: border-box;
-    max-width: 100%;
-    padding: 8px 13px;
-    border: 1px #ccc solid;
-    border-radius: 3px;
-    outline: none;
-  }
-
-  textarea {
-    width: 80%;
-  }
-
-  input[type="submit"],
-  button {
-    padding: 12px 20px;
-    border: none;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
 /* search */
 
 #searchform {
   padding-bottom: 0;
   overflow: hidden;
   background: #fff;
-  border: 1px solid $nl_border_color;
+  border: 1px solid $nl-border-color;
   border-radius: 2px;
 
   div {
@@ -370,13 +363,13 @@ form {
 table {
   border-spacing: 0;
   border-collapse: collapse;
-  border: 1px solid $nl_border_color;
+  border: 1px solid $nl-border-color;
 }
 
 th,
 td {
   padding: 8px 13px;
-  border: 1px solid $nl_border_color;
+  border: 1px solid $nl-border-color;
 }
 
 /* ----------------------------------------

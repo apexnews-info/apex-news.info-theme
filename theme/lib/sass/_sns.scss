@@ -1,4 +1,4 @@
-@import "_color";
+@import "color";
 
 // sns ----------
 
@@ -7,12 +7,8 @@ $facebook-color: #305097;
 $google-color: #db4a39;
 $hatena-color: #7db4e8;
 
-.bzb-sns {
-}
-
 .bzb-sns-btn {
-  //overflow: hidden;
-  //overflow: hidden;
+  // overflow: hidden;
   li {
     display: inline-block;
     margin-right: 8px;

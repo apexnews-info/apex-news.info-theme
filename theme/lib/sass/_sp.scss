@@ -124,16 +124,13 @@ $phone-x-padding: 20px;
 
   #gnav {
     display: none;
+    padding: 10px;
+    margin: 20px 2%;
+    border: 1px solid $gray-light;
 
     &.active {
       display: block;
     }
-  }
-
-  #gnav {
-    padding: 10px;
-    margin: 20px 2%;
-    border: 1px solid $gray-light;
 
     .wrap {
       margin: 0;
@@ -187,7 +184,7 @@ $phone-x-padding: 20px;
             float: none;
             margin-right: 0;
 
-            &:list-child {
+            &:last-child {
               border-bottom: none;
             }
 
