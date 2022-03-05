@@ -739,14 +739,65 @@ div.post-share-fb .fb_iframe_widget span {
 ---------------------------------------- */
 
 #comments {
-  padding: 40px 64px;
+  border-top: 1px solid $border-color;
+  padding: 0 64px 40px;
+
+  #wpdcom {
+    .wpd-form-head {
+      display: none;
+    }
+    .wpd-thread-head {
+      .wpd-thread-info {
+        border-bottom: 2px solid $apex-color;
+      }
+    }
+    .wpd-form-col-left {
+      display: none;
+    }
+    .wpd-reply-to {
+      display: none;
+    }
+    .wpd-comment-wrap {
+      border: 1px solid $border-color;
+      margin: 10px;
+      padding: 4px 12px 8px;
+      border-radius: 8px;
+
+      .wpd-comment-header {
+        .wpd-comment-author {
+          display: none;
+        }
+        .wpd-comment-date {
+          padding: 0;
+        }
+      }
+      .wpd-comment-right {
+        padding-bottom: 0;
+      }
+      .wpd-comment-text {
+        color: $text_color;
+      }
+    }
+    .wpd-comment-footer {
+      .wpd-vote {
+        padding-right: 40px;
+
+        .wpd-vote-result {
+          color: $text_color;
+        }
+        svg {
+          fill: $text_color;
+        }
+      }
+    }
+  }
 }
 .comment-list > .comment {
   margin-bottom: 40px;
   border-bottom: 1px #eee solid;
 }
 .comment-list > .comment > .comment-body {
-  padding: 0 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
 }
 .comment-list {
@@ -766,6 +817,12 @@ div.post-share-fb .fb_iframe_widget span {
   margin-left: 10px;
   img {
     vertical-align: top;
+  }
+  .fn {
+    margin-right: 10px;
+  }
+  .says {
+    display: none;
   }
 }
 .comment-meta {
@@ -787,7 +844,11 @@ div.post-share-fb .fb_iframe_widget span {
     }
   }
 }
+.comment-reply-title {
+  margin-bottom: 0;
+}
 .comment-form-comment {
+  margin-top: 0;
   label {
     display: none;
   }
