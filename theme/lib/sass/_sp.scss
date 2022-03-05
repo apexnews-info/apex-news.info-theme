@@ -24,6 +24,7 @@ $phone-x-padding: 20px;
       width: auto;
       margin: 0 36px;
     }
+
     .main-inner {
       margin-right: 350px;
     }
@@ -36,6 +37,7 @@ $phone-x-padding: 20px;
   .sp-hide {
     display: none !important;
   }
+
   .sp-show {
     display: block !important;
   }
@@ -44,6 +46,7 @@ $phone-x-padding: 20px;
     .post-sns {
       margin: 0 -20px -20px !important;
     }
+
     .post-share-title {
       margin: 0 -20px !important;
     }
@@ -51,41 +54,50 @@ $phone-x-padding: 20px;
 
   .single-lp {
     #lp-header {
-      padding-left: 24px;
       padding-right: 24px;
+      padding-left: 24px;
+
       .lp-title {
         padding: 0;
         margin: 0;
         font-size: 21px;
       }
     }
+
     #content {
       padding: 20px;
     }
+
     .lp-wrap {
-      padding: 24px 0;
       width: auto;
+      padding: 24px 0;
       margin: 0 24px;
-      input[type='text'] {
+
+      input[type="text"] {
         width: 100%;
       }
-      input[type='submit'] {
+
+      input[type="submit"] {
         margin-top: 30px;
       }
     }
+
     .post-content {
       padding: 0 !important;
     }
+
     #side {
-      margin-left: 0;
       width: 100%;
+      margin-left: 0;
+
       dl,
       dt,
       dd {
         width: 100%;
-        margin: 0 0 20px;
         padding: 0;
+        margin: 0 0 20px;
       }
+
       dt {
         margin-bottom: 8px;
       }
@@ -95,8 +107,8 @@ $phone-x-padding: 20px;
   .alignleft,
   .alignright {
     float: none !important;
-    margin-left: auto !important;
     margin-right: auto !important;
+    margin-left: auto !important;
   }
 
   img {
@@ -109,79 +121,94 @@ $phone-x-padding: 20px;
     float: right;
     font-size: 24px;
   }
+
   #gnav {
     display: none;
+
     &.active {
       display: block;
     }
   }
+
   #gnav {
+    padding: 10px;
     margin: 20px 2%;
     border: 1px solid $gray-light;
-    padding: 10px;
+
     .wrap {
       margin: 0;
     }
+
     ul {
       li {
-        float: none;
         position: relative;
+        float: none;
+        padding: 0;
         margin-right: 0;
         margin-bottom: 1px;
-        padding: 0;
+
         &.current-menu-item {
           a {
-            border-top: none;
             background: #f7f7f7;
+            border-top: none;
           }
         }
+
         a {
           display: block;
-          border-top: none;
           padding: 12px 8px;
           color: $gnav-link-color;
-          background: $gnav-bg;
           text-decoration: none;
-          transition: background 0.3s ease-in-out;
+          background: $gnav-bg;
+          border-top: none;
           border-bottom: 1px $border-color solid;
+          transition: background 0.3s ease-in-out;
+
           &:hover {
             color: $gnav-hover-color;
             border-top: none;
+
             .sub-menu {
               display: block;
             }
           }
         }
+
         .sub-menu {
-          display: block;
           position: relative;
+          display: block;
           width: auto;
           margin-left: 20px;
           background: #fff;
           border: none;
           border-bottom: none;
+
           li {
             float: none;
             margin-right: 0;
+
             &:list-child {
               border-bottom: none;
             }
+
             a {
+              padding: 10px 15px;
               color: $main_color;
               background: #fff;
-              padding: 10px 15px;
               border-bottom: 1px $border-color solid;
+
               &:hover {
-                background: #fafafa;
                 color: $main_color;
+                background: #fafafa;
                 box-shadow: 0;
               }
             }
           }
         }
+
         .sub-menu .sub-menu {
-          left: auto;
           top: auto;
+          left: auto;
         }
       }
     }
@@ -195,23 +222,27 @@ $phone-x-padding: 20px;
 
   .post-loop-wrap {
     .post-thumbnail {
-      height: 215px;
       float: none;
-      margin-left: 0;
+      height: 215px;
       margin-right: 0;
+      margin-left: 0;
       text-align: center;
+
       img {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
       }
     }
+
     .post-title {
       margin-bottom: 0;
     }
+
     .post-content {
       padding: 0 40px;
     }
+
     .post-footer {
       display: none;
     }
@@ -224,11 +255,13 @@ $phone-x-padding: 20px;
     float: none;
     width: auto;
   }
+
   /* padding */
 
   .post-header {
     padding: 42px 20px 20px;
   }
+
   .post-content,
   .cta-post-title,
   .post-cta,
@@ -241,9 +274,9 @@ $phone-x-padding: 20px;
 
   .post-thumbnail,
   .post-cta-img {
-    margin-left: 0;
-    margin-right: 0;
     float: none;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .post-footer {
@@ -253,9 +286,10 @@ $phone-x-padding: 20px;
   .more-link {
     display: block;
     width: 100%;
-    text-align: center;
     margin-bottom: 24px;
+    text-align: center;
   }
+
   /* tablet end */
 }
 
@@ -264,74 +298,90 @@ $phone-x-padding: 20px;
 
   .post-content {
     h2 {
+      margin-top: 56px;
       font-size: 22px;
-      margin-top: 56px;
     }
+
     h3 {
-      font-size: 20px;
       margin-top: 56px;
+      font-size: 20px;
     }
+
     h4 {
       font-size: 18px;
     }
   }
+
   #main {
     .post-share {
       .post-sns {
         margin: 0 -20px -20px;
+
         ul li {
-          width: auto;
           float: none;
+          width: auto;
           border-right: none;
           border-bottom: 1px solid #eee;
+
           a {
             padding: 16px 0;
             font-size: 16px;
+
             span {
               font-size: 16px;
             }
           }
-          a:before {
+
+          a::before {
             font-size: 18px;
           }
         }
       }
     }
+
     #comments {
       padding: 20px;
     }
+
     .post-author {
       padding: 20px;
+
       .post-author-img {
         float: none;
       }
+
       .post-author-meta {
         padding: 0;
         margin: 10px 0 0;
       }
     }
   }
+
   .post-cta {
     .post-cta-img {
+      float: none;
       width: 100%;
       margin: 0 auto 30px;
-      float: none;
     }
+
     .post-cta-btn {
       margin: 24px 0 10px;
+
       a {
-        width: 100%;
         box-sizing: border-box;
+        width: 100%;
       }
     }
   }
+
   .post-footer {
     padding: 0 20px !important;
   }
+
   #main .post-cta {
     .cta-post-title {
-      font-size: 24px !important;
       padding: 0 0 20px !important;
+      font-size: 24px !important;
     }
   }
 

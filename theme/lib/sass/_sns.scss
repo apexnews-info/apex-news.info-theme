@@ -1,4 +1,4 @@
-@import '_color';
+@import "_color";
 
 // sns ----------
 
@@ -9,16 +9,19 @@ $hatena-color: #7db4e8;
 
 .bzb-sns {
 }
+
 .bzb-sns-btn {
   //overflow: hidden;
   //overflow: hidden;
   li {
     display: inline-block;
-    vertical-align: top;
     margin-right: 8px;
+    vertical-align: top;
+
     &.bzb-facebook .fb_iframe_widget span {
       vertical-align: top !important;
     }
+
     &.bzb-twitter {
       width: 96px;
     }
@@ -27,7 +30,7 @@ $hatena-color: #7db4e8;
 
 .fb-like iframe,
 .item-facebook-like iframe {
-  max-width: none !important; /*こちらを優先*/
+  max-width: none !important; /* こちらを優先 */
 }
 
 /* loop sns */

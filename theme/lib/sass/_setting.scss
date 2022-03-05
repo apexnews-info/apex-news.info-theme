@@ -23,9 +23,9 @@ $side-width: 290px;
 
 // font ========================================
 
-$font-awesome: FontAwesome;
-$font-sans: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', '游ゴシック',
-  YuGothic, Verdana, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic',
+$font-awesome: fontawesome;
+$font-sans: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック",
+  yugothic, verdana, "メイリオ", meiryo, osaka, "ＭＳ Ｐゴシック", "MS PGothic",
   sans-serif;
 
 // color ========================================
@@ -41,7 +41,7 @@ $border-color: #e5e5e5;
 $border-color-light: #efefef;
 
 $gray: #5e6265;
-$gray-light: #cccccc;
+$gray-light: #ccc;
 
 $apex-color: #953036;
 
