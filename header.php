@@ -14,6 +14,7 @@
   <?php echo get_option('analytics_tracking_code'); ?>
   <?php echo get_option('webmaster_tool'); ?>
 
+  <script data-ad-client="ca-pub-3452649318921270" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body id="top" <?php body_class(); ?> itemschope="itemscope" itemtype="http://schema.org/WebPage">
@@ -78,5 +79,5 @@
         </nav>
       <?php } ?>
 
-    <?php } // if is_singular('lp') 
+    <?php } // if is_singular('lp')
     ?>
