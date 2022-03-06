@@ -882,6 +882,8 @@ div.post-share-fb .fb_iframe_widget span {
   border-top: 1px solid $border-color;
 
   #wpdcom {
+    padding-top: 10px;
+
     .wpd-form-head {
       display: none;
     }
@@ -899,6 +901,26 @@ div.post-share-fb .fb_iframe_widget span {
           }
         }
       }
+
+      .ql-container {
+        border: 1px solid $border-color;
+        border-radius: 6px;
+
+        .ql-editor {
+          &.ql-blank::before {
+            color: #aaa;
+          }
+        }
+      }
+    }
+
+    .wpd-field {
+      border: 1px solid $border-color;
+      border-radius: 6px;
+
+      &::placeholder {
+        color: #aaa;
+      }
     }
 
     .wpd-thread-head {
@@ -907,8 +929,27 @@ div.post-share-fb .fb_iframe_widget span {
       }
     }
 
-    .wpd-form-col-left {
-      display: none;
+    .wpd-form-row {
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+
+      .wpdiscuz-item {
+        padding: 0;
+      }
+
+      .wc-field-submit {
+        padding: 0;
+      }
+
+      .wpd-form-col-left {
+        flex: 1;
+        padding-right: 20px;
+
+        .wc_email-wrapper {
+          display: none;
+        }
+      }
     }
 
     .wpd-reply-to {
@@ -921,16 +962,6 @@ div.post-share-fb .fb_iframe_widget span {
       border: 1px solid $border-color;
       border-radius: 6px;
 
-      .wpd-comment-header {
-        .wpd-comment-author {
-          display: none;
-        }
-
-        .wpd-comment-date {
-          padding: 0;
-        }
-      }
-
       .wpd-comment-right {
         padding-bottom: 0;
       }
@@ -940,17 +971,19 @@ div.post-share-fb .fb_iframe_widget span {
       }
     }
 
-    .wpd-comment-footer {
-      .wpd-vote {
-        padding-right: 40px;
+    .wpd-vote {
+      padding-right: 40px;
 
-        .wpd-vote-result {
-          color: $text_color;
-        }
+      .wpd-vote-result {
+        padding: 0 16px;
+        font-size: 16px;
+        color: $text_color;
+      }
 
-        svg {
-          fill: $text_color;
-        }
+      svg {
+        width: 22px;
+        margin: -2px;
+        fill: #606060;
       }
     }
   }
