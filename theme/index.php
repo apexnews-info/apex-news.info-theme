@@ -32,13 +32,6 @@
           ?>
               <article id="post-<?php echo the_ID(); ?>" <?php post_class(); ?>>
 
-                <header class="post-header">
-                  <ul class="post-meta list-inline">
-                    <li class="date updated"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d'); ?></li>
-                  </ul>
-                  <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php esc_html(the_title()); ?></a></h2>
-                </header>
-
                 <section class="post-content">
 
                   <?php if (get_the_post_thumbnail()) { ?>
@@ -47,9 +40,14 @@
                     </div>
                   <?php } ?>
 
-                  <?php the_content('続きを読む'); ?>
-
                 </section>
+
+                <header class="post-header">
+                  <ul class="post-meta list-inline">
+                    <li class="date updated"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d'); ?></li>
+                  </ul>
+                  <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php esc_html(the_title()); ?></a></h2>
+                </header>
 
               </article>
 
