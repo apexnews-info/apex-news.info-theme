@@ -217,6 +217,13 @@ form {
 
 #content {
   padding: 15px 0 52px;
+  color: #eee !important;
+  background: #222 !important;
+
+  * {
+    color: #eee !important;
+    background: #222 !important;
+  }
 
   /* キャプション */
   .wp-caption {
@@ -248,11 +255,10 @@ article.wp101,
 article.seo101 {
   margin-bottom: 40px;
   background: #fff;
-  border: 1px $border-color solid;
 }
 
 .post-header {
-  padding: 56px 64px 0;
+  padding: 0;
 }
 
 .post-title {
@@ -280,25 +286,14 @@ article.page {
 }
 
 .post-meta {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 42px;
-  border-top: 1px $border-color-light solid;
-
-  li {
-    float: left;
-    padding-right: 24px;
-    margin-top: -0.7em;
-    margin-right: 20px;
-    font-size: 14px;
-    background: #fff;
-  }
+  padding: 10px;
+  margin: 0;
+  list-style: none;
 }
 
 .post-thumbnail {
-  float: right;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  width: 100%;
+  height: auto;
 
   img {
     max-width: 100%;
@@ -1159,9 +1154,12 @@ div.post-share-fb .fb_iframe_widget span {
 }
 
 .post-loop-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
   article {
-    width: 100%;
-    margin: 0 0 60px;
+    width: 30%;
+    margin: 10px;
 
     p {
       margin-top: 0;
@@ -1169,11 +1167,8 @@ div.post-share-fb .fb_iframe_widget span {
   }
 
   .post-thumbnail {
-    float: right;
-    width: 304px;
-    height: 215px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    width: 100%;
+    height: auto;
 
     img {
       max-width: 100%;
@@ -1183,7 +1178,7 @@ div.post-share-fb .fb_iframe_widget span {
 
   .post-content {
     width: auto;
-    padding: 0 64px 42px;
+    padding: 0;
   }
 
   .post-footer {

@@ -45,8 +45,6 @@
                     </div>
                   <?php } ?>
 
-                  <?php the_content('続きを読む'); ?>
-
                 </section>
 
               </article>
