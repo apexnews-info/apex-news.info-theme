@@ -1274,6 +1274,10 @@ div.post-share-fb .fb_iframe_widget span {
 
 .side-widget-area {
   padding: 0;
+
+  .twitter-timeline {
+    height: 200px !important;
+  }
 }
 
 .side-widget {
