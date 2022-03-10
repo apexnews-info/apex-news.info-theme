@@ -43,11 +43,6 @@
 
               <section class="post-content">
 
-                <?php if (get_the_post_thumbnail()) : ?>
-                  <div class="post-thumbnail">
-                    <?php the_post_thumbnail(); ?>
-                  </div>
-                <?php endif; ?>
                 <?php
                 the_content();
 
